@@ -146,7 +146,7 @@ window.gaTitle = 'หน้าแรก';
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09_746170276.jpg') }}">
 				<div class="img-box-content visible">
-					<h4>“ดัก”  ซื้อหุ้นปันผลช่วงไหนดีที่สุด</h4>
+					<h4>บทความจากหลังบ้าน</h4>
 				</div>
 			</a>
 
@@ -157,7 +157,7 @@ window.gaTitle = 'หน้าแรก';
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_429562807.jpg') }}">
 				<div class="img-box-content visible">
-					<h4>ลงทุนอะไร  ให้ชนะเงินเฟ้อ</h4>
+					<h4>บทความจากหลังบ้าน</h4>
 				</div>
 			</a>
 
@@ -168,7 +168,7 @@ window.gaTitle = 'หน้าแรก';
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_735350089.jpg') }}">
 				<div class="img-box-content visible">
-					<h4>ออมก่อน...รวยกว่า เงินเดือน 15,000 ก็ลงทุนได้ </h4>
+					<h4>บทความจากหลังบ้าน</h4>
 				</div>
 			</a>
 
@@ -179,7 +179,7 @@ window.gaTitle = 'หน้าแรก';
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/img/second-bn.jpg') }}">
 				<div class="img-box-content visible">
-					<h4>ลงทุนยังไง? ทำไมถึงผิดซ้ำซาก</h4>
+					<h4>บทความจากหลังบ้าน</h4>
 				</div>
 			</a>
 
