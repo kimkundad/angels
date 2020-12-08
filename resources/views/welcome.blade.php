@@ -62,7 +62,7 @@ window.gaTitle = 'หน้าแรก';
 					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">วางแผนการลงทุน</div>
 
 					<div class="caption-text">ตราสารทางการเงินมีอายุตั้งแต่ 1 ปีขึ้นไป ออกโดยบริษัทเอกชน มีฐานะเป็น "ลูกหนี้" และผู้ลงทุนมีฐานะเป็น "เจ้าหนี้" เพื่อระดมเงินจากประชาชนทั่วไป</div>
-					<a href="#" class="button medium">อ่านต่อ</a>
+					<a href="{{ url('blog_detail') }}" class="button medium">อ่านต่อ</a>
 				</div>
 
 			</li>
@@ -112,7 +112,7 @@ window.gaTitle = 'หน้าแรก';
 					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">วางแผนมรดก ทำพินัยกรรม</div>
 
 					<div class="caption-text">กองทุนผสมในประเทศโดยเน้นการลงทุนในหุ้นที่มีนโยบายหรือมีการจ่ายเงินปันผลอย่างสม่ำเสมอ ประมาณ 65-70% ส่วนที่เหลือกระจายลงทุนในตราสารหนี้</div>
-					<a href="#" class="button medium">อ่านต่อ</a>
+					<a href="{{ url('blog_detail') }}" class="button medium">อ่านต่อ</a>
 				</div>
 
 			</li>
@@ -144,7 +144,7 @@ window.gaTitle = 'หน้าแรก';
 		<div class="col-md-3">
 
 			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09_746170276.jpg') }}">
+			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09_746170276.jpg') }}">
 				<div class="img-box-content visible">
 					<h4>“ดัก”  ซื้อหุ้นปันผลช่วงไหนดีที่สุด</h4>
 				</div>
@@ -155,7 +155,7 @@ window.gaTitle = 'หน้าแรก';
 		<div class="col-md-3">
 
 			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09w_429562807.jpg') }}">
+			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_429562807.jpg') }}">
 				<div class="img-box-content visible">
 					<h4>ลงทุนอะไร  ให้ชนะเงินเฟ้อ</h4>
 				</div>
@@ -166,7 +166,7 @@ window.gaTitle = 'หน้าแรก';
 		<div class="col-md-3">
 
 			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09w_735350089.jpg') }}">
+			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_735350089.jpg') }}">
 				<div class="img-box-content visible">
 					<h4>ออมก่อน...รวยกว่า เงินเดือน 15,000 ก็ลงทุนได้ </h4>
 				</div>
@@ -177,7 +177,7 @@ window.gaTitle = 'หน้าแรก';
 		<div class="col-md-3">
 
 			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/img/second-bn.jpg') }}">
+			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/img/second-bn.jpg') }}">
 				<div class="img-box-content visible">
 					<h4>ลงทุนยังไง? ทำไมถึงผิดซ้ำซาก</h4>
 				</div>
@@ -370,7 +370,7 @@ window.gaTitle = 'หน้าแรก';
 		<div class="row">
 			<!-- Blog Post Item -->
 			<div class="col-md-4">
-				<a href="#" class="blog-compact-item-container">
+				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
 					<div class="blog-compact-item">
 						<img src="{{ url('assets/img/59_239735236.jpg') }}" alt="">
 						<span class="blog-item-tag">Tips</span>
@@ -388,7 +388,7 @@ window.gaTitle = 'หน้าแรก';
 
 			<!-- Blog Post Item -->
 			<div class="col-md-4">
-				<a href="#" class="blog-compact-item-container">
+				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
 					<div class="blog-compact-item">
 						<img src="{{ url('assets/img/30_588769904.jpg') }}" alt="">
 						<span class="blog-item-tag">Stories</span>
@@ -405,7 +405,7 @@ window.gaTitle = 'หน้าแรก';
 
 			<!-- Blog Post Item -->
 			<div class="col-md-4">
-				<a href="#" class="blog-compact-item-container">
+				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
 					<div class="blog-compact-item">
 						<img src="{{ url('assets/img/57_234790165.jpg') }}" alt="">
 						<span class="blog-item-tag">Tips</span>
@@ -421,7 +421,7 @@ window.gaTitle = 'หน้าแรก';
 			<!-- Blog post Item / End -->
 
 			<div class="col-md-12 centered-content">
-				<a href="#" class="button border margin-top-10">View Blog</a>
+				<a href="{{ url('blog') }}" class="button border margin-top-10">View Blog</a>
 			</div>
 
 		</div>
