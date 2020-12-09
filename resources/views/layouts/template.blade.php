@@ -10,11 +10,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+@if(isset(setting()->facebook_image))
 <meta property="og:url" content="{{ url('/') }}">
 <meta property="og:title" content="{{ url('img/setting/'.setting()->facebook_image) }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{ setting()->facebook_title }}">
 <meta property="og:description" content="{{ setting()->facebook_detail }}">
+@endif
 
 @include('layouts.inc-style')
 @yield('stylesheet')
