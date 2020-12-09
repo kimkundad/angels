@@ -54,7 +54,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					data-hoffset="['0','0','40','0']"
 					data-y="['middle','middle','middle','middle']"
 					data-voffset="['-40','-40','-20','-80']"
-					data-fontsize="['42','36', '32','36','22']"
+					data-fontsize="['32','32', '32','36','22']"
 					data-lineheight="['70','60','60','45','35']"
 					data-width="['640','640', 640','420','320']"
 					data-height="none" data-whitespace="normal"
