@@ -1,10 +1,12 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+อยากลงทุนแต่ไม่รู้จะเริ่มต้นอย่างไร หรือมีปัญหาที่ไม่รู้จะปรึกษาใคร ปรึกษาเราได้ในทุกเรื่องของการลงทุน วางใจให้ แองเจิ้ล || Wealth Angels
+@stop
+
 
 @section('stylesheet')
+
 
 @stop('stylesheet')
 
@@ -16,11 +18,13 @@ window.gaTitle = 'หน้าแรก';
 	<div id="rev_slider_4_1" class="rev_slider home fullwidthabanner" style="display:none;" data-version="5.0.7">
 		<ul>
 
+			@if(isset($slide))
+			@foreach($slide as $u)
 			<!-- Slide  -->
 			<li data-index="rs-1" data-transition="fade" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="800" data-fsslotamount="7" data-saveperformance="off">
 
 				<!-- Background -->
-				<img src="{{ url('assets/images/investment-debentures.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
+				<img src="{{ url('img/slide/'.$u->image) }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
 
 				<!-- Caption-->
 				<div class="tp-caption custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
@@ -59,63 +63,18 @@ window.gaTitle = 'หน้าแรก';
 					data-basealign="slide"
 					data-responsive_offset="off"
 					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">วางแผนการลงทุน</div>
+					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">{{ $u->title }}</div>
 
-					<div class="caption-text">ตราสารทางการเงินมีอายุตั้งแต่ 1 ปีขึ้นไป ออกโดยบริษัทเอกชน มีฐานะเป็น "ลูกหนี้" และผู้ลงทุนมีฐานะเป็น "เจ้าหนี้" เพื่อระดมเงินจากประชาชนทั่วไป</div>
-					<a href="{{ url('blog_detail') }}" class="button medium">อ่านต่อ</a>
+					<div class="caption-text">{{ $u->detail }}</div>
+					<a href="{{ $u->url_btn }}" class="button medium">อ่านต่อ</a>
 				</div>
 
 			</li>
+			@endforeach
+			@endif
 
-			<!-- Slide  -->
-			<li data-index="rs-2" data-transition="fade" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="800" data-fsslotamount="7" data-saveperformance="off">
-
-				<!-- Background -->
-				<img src="{{ url('assets/images/ssf-banner.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="112" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"> 
-
-				<!-- Caption-->
-				<div class="tp-caption centered custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
-					id="slide-2-layer-2" 
-					data-x="['center','center','center','center']" data-hoffset="['0']" 
-					data-y="['middle','middle','middle','middle']" data-voffset="['0']" 
-					data-width="['640','640', 640','420','320']"
-					data-height="auto"
-					data-whitespace="nowrap"
-					data-transform_idle="o:1;"	
-					data-transform_in="y:0;opacity:0;s:1000;e:Power2.easeOutExpo;s:400;e:Power2.easeOutExpo" 
-					data-transform_out="" 
-					data-mask_in="x:0px;y:[20%];s:inherit;e:inherit;" 
-					data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-					data-start="1000" 
-					data-responsive_offset="on">
-
-					<!-- Caption Content -->
-					<div class="R_title margin-bottom-15"
-					id="slide-2-layer-3"
-					data-x="['center','center','center','center']"
-					data-hoffset="['0','0','0','0']"
-					data-y="['middle','middle','middle','middle']"
-					data-voffset="['-40','-40','-20','-80']"
-					data-fontsize="['42','36', '32','36','22']"
-					data-lineheight="['70','60','60','45','35']"
-					data-width="['640','640', 640','420','320']"
-					data-height="none" data-whitespace="normal"
-					data-transform_idle="o:1;"
-					data-transform_in="y:-50px;sX:2;sY:2;opacity:0;s:1000;e:Power4.easeOut;"
-					data-transform_out="opacity:0;s:300;"
-					data-start="600"
-					data-splitin="none"
-					data-splitout="none"
-					data-basealign="slide"
-					data-responsive_offset="off"
-					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">วางแผนมรดก ทำพินัยกรรม</div>
-
-					<div class="caption-text">กองทุนผสมในประเทศโดยเน้นการลงทุนในหุ้นที่มีนโยบายหรือมีการจ่ายเงินปันผลอย่างสม่ำเสมอ ประมาณ 65-70% ส่วนที่เหลือกระจายลงทุนในตราสารหนี้</div>
-					<a href="{{ url('blog_detail') }}" class="button medium">อ่านต่อ</a>
-				</div>
-
-			</li>
+			
+			
 
 		</ul>
 		<div class="tp-static-layers"></div>
@@ -141,51 +100,18 @@ window.gaTitle = 'หน้าแรก';
 					ดังนั้นเวลาที่เค้าอยากได้อะไร เค้าจะรู้ถึงคุณค่าของเงินที่ได้มา เราไม่ควรให้ทุกอย่างแก่ลูกทันที อันไหนที่รอได้ก็อาจจะชวนให้ลูกทำงานเล็กๆน้อยๆ เก็บเงินเพื่อซื้อของสิ่งนั้น</p>
 		</div>
 		
+		@if(isset($objs))
+		@foreach($objs as $u)
 		<div class="col-md-3">
-
 			<!-- Image Box -->
-			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09_746170276.jpg') }}">
+			<a href="{{ url('blog_detail/'.$u->id) }}" class="img-box" data-background-image="{{ url('img/blog/'.$u->image) }}">
 				<div class="img-box-content visible">
-					<h4>บทความจากหลังบ้าน</h4>
+					<h4>{{ $u->title }}</h4>
 				</div>
 			</a>
-
 		</div>
-		
-		<div class="col-md-3">
-
-			<!-- Image Box -->
-			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_429562807.jpg') }}">
-				<div class="img-box-content visible">
-					<h4>บทความจากหลังบ้าน</h4>
-				</div>
-			</a>
-
-		</div>
-
-		<div class="col-md-3">
-
-			<!-- Image Box -->
-			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/images/09w_735350089.jpg') }}">
-				<div class="img-box-content visible">
-					<h4>บทความจากหลังบ้าน</h4>
-				</div>
-			</a>
-
-		</div>
-
-		<div class="col-md-3">
-
-			<!-- Image Box -->
-			<a href="{{ url('blog_detail') }}" class="img-box" data-background-image="{{ url('assets/img/second-bn.jpg') }}">
-				<div class="img-box-content visible">
-					<h4>บทความจากหลังบ้าน</h4>
-				</div>
-			</a>
-
-		</div>
-			
-		
+		@endforeach
+		@endif
 		
 
 	</div>
@@ -210,89 +136,25 @@ window.gaTitle = 'หน้าแรก';
 			<div class="col-md-12">
 				<div class="simple-slick-carousel dots-nav">
 
+					@if(isset($our))
+					@foreach($our as $u)
 					<!-- Listing Item -->
 					<div class="carousel-item">
-						<a href="{{ url('ที่ปรึกษาด้านบัญชีและภาษีสำหรับองค์กร') }}" class="listing-item-container compact">
+						<a href="{{ $u->url_btn }}" class="listing-item-container compact">
 							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
+								<img src="{{ url('img/service/'.$u->image) }}" alt="{{ $u->title }}">
 								<div class="listing-item-content">
-									<h3>ที่ปรึกษาด้านบัญชี ภาษีสำหรับองค์กร </h3>
+									<h3> {{ $u->title }} </h3>
 								</div>
 								
 							</div>
 						</a>
 					</div>
 					<!-- Listing Item / End -->
-
-					<!-- Listing Item -->
-					<div class="carousel-item">
-						<a href="{{ url('จัดตั้งบริษัทโฮลดิ้ง_ทำแผนสืบทอดกิจการและธรรมนูญครอบครัว') }}" class="listing-item-container compact">
-							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
-								<div class="listing-item-content">
-									<h3>จัดตั้งบริษัทโฮลดิ้ง ทำแผนสืบทอดกิจการและธรรมนูญครอบครัว </h3>
-								</div>
-								
-							</div>
-						</a>
-					</div>
-					<!-- Listing Item / End -->
-
-					<!-- Listing Item -->
-					<div class="carousel-item">
-						<a href="{{ url('สัมมนาให้ความรู้การเงินแก่พนักงาน') }}" class="listing-item-container compact">
-							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
-								<div class="listing-item-content">
-									<h3>สัมมนาให้ความรู้การเงิน <br> แก่พนักงาน </h3>
-								</div>
-								
-							</div>
-						</a>
-					</div>
-					<!-- Listing Item / End -->
-
-					<!-- Listing Item -->
-					<div class="carousel-item">
-						<a href="{{ url('วางแผนเกษียณ') }}" class="listing-item-container compact">
-							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
-								<div class="listing-item-content">
-									<h3>วางแผนเกษียณ </h3>
-								</div>
-								
-							</div>
-						</a>
-					</div>
-					<!-- Listing Item / End -->
-
-					<!-- Listing Item -->
-					<div class="carousel-item">
-						<a href="{{ url('วางแผนภาษี') }}" class="listing-item-container compact">
-							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
-								<div class="listing-item-content">
-									<h3>วางแผนภาษี </h3>
-								</div>
-								
-							</div>
-						</a>
-					</div>
-					<!-- Listing Item / End -->
-
-					<!-- Listing Item -->
-					<div class="carousel-item">
-						<a href="{{ url('วางแผนบริหารความเสี่ยง') }}" class="listing-item-container compact">
-							<div class="listing-item">
-								<img src="{{ url('assets/img/dividend-stocks-2.jpg') }}" alt="">
-								<div class="listing-item-content">
-									<h3>วางแผนบริหารความเสี่ยง </h3>
-								</div>
-								
-							</div>
-						</a>
-					</div>
-					<!-- Listing Item / End -->
+					@endforeach
+					@endif
+					
+					
 
 				</div>
 				
@@ -368,57 +230,33 @@ window.gaTitle = 'หน้าแรก';
 		</div>
 
 		<div class="row">
+
+			@if(isset($blog))
+			@foreach($blog as $u)
 			<!-- Blog Post Item -->
 			<div class="col-md-4">
-				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
+				<a href="{{ url('blog_detail/'.$u->id) }}" class="blog-compact-item-container">
 					<div class="blog-compact-item">
-						<img src="{{ url('assets/img/59_239735236.jpg') }}" alt="">
+						<img src="{{ url('img/blog/'.$u->image) }}" alt="{{ $u->title }}">
+						@if($u->type == 0)
 						<span class="blog-item-tag">Tips</span>
+						@else
+						<span class="blog-item-tag">Stories</span>
+						@endif
+						
 						<div class="blog-compact-item-content">
 							<ul class="blog-post-tags">
-								<li>22 August 2017</li>
+								<li>{{ formatDateThat($u->created_at) }}</li>
 							</ul>
-							<h3>วางแผนการศึกษาดี ลูกมีแต้มต่อ</h3>
+							<h3>{{ $u->title }}</h3>
 							
 						</div>
 					</div>
 				</a>
 			</div>
 			<!-- Blog post Item / End -->
-
-			<!-- Blog Post Item -->
-			<div class="col-md-4">
-				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
-					<div class="blog-compact-item">
-						<img src="{{ url('assets/img/30_588769904.jpg') }}" alt="">
-						<span class="blog-item-tag">Stories</span>
-						<div class="blog-compact-item-content">
-							<ul class="blog-post-tags">
-								<li>18 August 2017</li>
-							</ul>
-							<h3>หาเงินคนเดียว เลี้ยงครอบครัวยังไงดี?</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<!-- Blog post Item / End -->
-
-			<!-- Blog Post Item -->
-			<div class="col-md-4">
-				<a href="{{ url('blog_detail') }}" class="blog-compact-item-container">
-					<div class="blog-compact-item">
-						<img src="{{ url('assets/img/57_234790165.jpg') }}" alt="">
-						<span class="blog-item-tag">Tips</span>
-						<div class="blog-compact-item-content">
-							<ul class="blog-post-tags">
-								<li>10 August 2017</li>
-							</ul>
-							<h3>3 เคล็ดลับสร้างความมั่งคั่งตั้งแต่เริ่มทำงานปีแรก</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<!-- Blog post Item / End -->
+			@endforeach
+			@endif
 
 			<div class="col-md-12 centered-content">
 				<a href="{{ url('blog') }}" class="button border margin-top-10">View Blog</a>

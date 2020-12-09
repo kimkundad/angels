@@ -14,5 +14,5 @@
 
 
 
-
+{!! setting()->google_analytic !!}
 

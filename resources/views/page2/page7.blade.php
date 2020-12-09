@@ -1,8 +1,8 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+จัดตั้งบริษัทโฮลดิ้ง ทำแผนสืบทอดกิจการและธรรมนูญครอบครัว || Wealth Angels
+@stop
 
 @section('stylesheet')
 

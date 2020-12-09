@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', 'HomeController@index');
+
+Route::get('/บทความการเงิน', 'HomeController@blog');
+
+Route::get('/blog_detail/{id}', 'HomeController@blog_detail');
+
+Route::post('/api/add_contact', 'HomeController@add_contact')->name('add_contact');
+
 Route::get('/about_us', function () {
     return view('about_us');
 });
@@ -99,14 +107,33 @@ Route::get('/คำนวณการเงินแบบง่ายๆ', func
     return view('page4.page4');
 });
 
-Route::get('/บทความการเงิน', function () {
-    return view('blog');
-});
 
-Route::get('/blog_detail', function () {
-    return view('blog_detail');
-});
+
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['UserRole:manager|employee']], function() {
+
+    Route::get('admin/dashboard', 'DashboardController@index');
+    Route::resource('admin/blog', 'BlogController');
+    Route::post('/api/upload_img', 'BlogController@upload_img')->name('home');
+    Route::get('api/del_blog/{id}', 'BlogController@del_blog')->name('del_blog');
+
+    Route::get('admin/index_b', 'BlogController@blog_index');
+    
+    Route::post('api/blog_status', 'BlogController@blog_status')->name('blog_status');
+
+    Route::resource('admin/slide_show', 'SlideController');
+    Route::post('api/slide_status', 'SlideController@slide_status')->name('slide_status');
+    Route::get('api/del_slide/{id}', 'SlideController@del_slide')->name('del_slide');
+
+    Route::resource('admin/service', 'ServiceController');
+    Route::post('api/service_status', 'ServiceController@service_status')->name('service_status');
+    Route::get('api/del_service/{id}', 'ServiceController@del_service')->name('del_service');
+
+    Route::get('admin/setting', 'SettingController@setting')->name('setting');
+    Route::post('api/post_setting', 'SettingController@post_setting')->name('post_setting');
+
+});

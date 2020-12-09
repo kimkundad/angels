@@ -5,14 +5,19 @@
 
 <!-- Basic Page Needs
 ================================================== -->
-<title>Listeo</title>
+<title>@yield('title')</title>
+<meta name="description" content="Wealth Angels ได้รวบรวมทุกสาระ เรื่องการเงิน จากประสบการณ์ตรงในแวดวงการเงินกว่า 10 ปี ถ้าคุณอยากจะเริ่มต้นเรียนรู้ ติดตามเราได้ thewealthangels.com">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		@yield('og_tag')
+<meta property="og:url" content="{{ url('/') }}">
+<meta property="og:title" content="{{ url('img/setting/'.setting()->facebook_image) }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ setting()->facebook_title }}">
+<meta property="og:description" content="{{ setting()->facebook_detail }}">
 
-        @include('layouts.inc-style')
-        @yield('stylesheet')
+@include('layouts.inc-style')
+@yield('stylesheet')
 
 </head>
 

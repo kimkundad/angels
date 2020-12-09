@@ -1,8 +1,8 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+บทความการเงิน || Wealth Angels
+@stop
 
 @section('stylesheet')
 
@@ -26,7 +26,7 @@ window.gaTitle = 'หน้าแรก';
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs">
 					<ul>
-						<li><a href="{{ url('') }}">หน้าหลัก</a></li>
+						<li><a href="{{ url('/') }}">หน้าหลัก</a></li>
 						<li>บทความการเงิน</li>
 					</ul>
 				</nav>
@@ -46,30 +46,40 @@ window.gaTitle = 'หน้าแรก';
 	<div class="row">
 		<div class="col-lg-9 col-md-8 padding-right-30">
 
+
+			@if(isset($objs))
+			@foreach($objs as $u)
 			<!-- Blog Post -->
 			<div class="blog-post">
 				
 				<!-- Img -->
-				<a href="pages-blog-post.html" class="post-img">
-					<img src="{{ url('assets/images/investment-debentures.jpg') }}" alt="">
+				<a href="{{ url('blog_detail/'.$u->id) }}" class="post-img">
+					<img src="{{ url('img/blog/'.$u->image) }}" alt="">
 				</a>
 				
 				<!-- Content -->
 				<div class="post-content">
-					<h3><a href="pages-blog-post.html">Hotels for All Budgets </a></h3>
+					<h3><a href="{{ url('blog_detail/'.$u->id) }}">{{ $u->title }} </a></h3>
 
 					<ul class="post-meta">
-						<li>August 22, 2017</li>
+						<li>{{ formatDateThat($u->created_at) }}</li>
+						@if($u->type == 0)
 						<li><a href="#">Tips</a></li>
+						@else
+						<li><a href="#">Stories</a></li>
+						@endif
+						
 					</ul>
 
-					<p>Nam nisl lacus, dignissim ac tristique ut, scelerisque eu massa. Vestibulum ligula nunc, rutrum in malesuada vitae, tempus sed augue. Curabitur quis lectus quis augue dapibus facilisis.</p>
+					<p>{!! mb_substr($u->detail, 0, 350, 'UTF-8') !!}</p>
 
-					<a href="pages-blog-post.html" class="read-more">อ่านต่อ <i class="fa fa-angle-right"></i></a>
+					<a href="{{ url('blog_detail/'.$u->id) }}" class="read-more">อ่านต่อ <i class="fa fa-angle-right"></i></a>
 				</div>
 
 			</div>
 			<!-- Blog Post / End -->
+			@endforeach
+			@endif
 
 
 			
@@ -81,16 +91,7 @@ window.gaTitle = 'หน้าแรก';
 			<div class="row">
 				<div class="col-md-12">
 					<!-- Pagination -->
-					<div class="pagination-container margin-bottom-40">
-						<nav class="pagination">
-							<ul>
-								<li><a href="#" class="current-page">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
-							</ul>
-						</nav>
-					</div>
+					@include('pagination.default', ['paginator' => $objs])
 				</div>
 			</div>
 			<!-- Pagination / End -->
@@ -116,44 +117,25 @@ window.gaTitle = 'หน้าแรก';
 				<h3>Popular Posts</h3>
 				<ul class="widget-tabs">
 
+
+					@if(isset($slide))
 					<!-- Post #1 -->
+					@foreach($slide as $u)
 					<li>
 						<div class="widget-content">
 								
 							
 							<div class="widget-text">
-								<h5><a href="pages-blog-post.html">Hotels for All Budgets </a></h5>
-								<span>October 26, 2016</span>
+								<h5><a href="{{ url('blog_detail/'.$u->id) }}">{{ $u->title }} </a></h5>
+								<span>{{ formatDateThat($u->created_at) }}</span>
 							</div>
 							<div class="clearfix"></div>
 						</div>
 					</li>
+					@endforeach
+					@endif
 					
-					<!-- Post #2 -->
-					<li>
-						<div class="widget-content">
-							
-							
-							<div class="widget-text">
-								<h5><a href="pages-blog-post.html">The 50 Greatest Street Arts In London</a></h5>
-								<span>November 9, 2016</span>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</li>
 					
-					<!-- Post #3 -->
-					<li>
-						<div class="widget-content">
-							
-							
-							<div class="widget-text">
-								<h5><a href="pages-blog-post.html">The Best Cofee Shops In Sydney Neighborhoods</a></h5>
-								<span>November 12, 2016</span>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</li>
 
 				</ul>
 
@@ -165,9 +147,8 @@ window.gaTitle = 'หน้าแรก';
 			<div class="widget margin-top-40">
 				<h3 class="margin-bottom-25">Social</h3>
 				<ul class="social-icons rounded">
-					<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
-					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+					<li><a class="facebook" href="{{ setting()->facebook_url }}"><i class="icon-facebook"></i></a></li>
+					<li><a class="twitter" href="{{ setting()->twitter }}"><i class="icon-twitter"></i></a></li>
 				</ul>
 
 			</div>

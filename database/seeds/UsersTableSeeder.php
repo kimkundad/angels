@@ -23,9 +23,9 @@ class UsersTableSeeder extends Seeder
               'is_admin' => 1
             ],
             [
-              'name' => 'I Am Admin',
-              'email' => 'savebabyvote@gmail.com',
-              'password' => bcrypt('12345678'),
+              'name' => 'thewealthangels',
+              'email' => 'thewealthangels@gmail.com',
+              'password' => bcrypt('kayjisom1234'),
               'code_user' => 'UD123456',
               'avatar' => '1483537975.png',
               'email_verified_at' => '2020-08-01 14:27:38',

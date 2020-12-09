@@ -1,8 +1,8 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+คลาสสอนการเงินให้เด็กก่อนวัยรุ่น || Wealth Angels
+@stop
 
 @section('stylesheet')
 

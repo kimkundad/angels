@@ -1,8 +1,8 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+เกี่ยวกับเรา || Wealth Angels
+@stop
 
 @section('stylesheet')
 <style>

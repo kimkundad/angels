@@ -89,10 +89,10 @@
 			<!-- Right Side Content / End -->
 			<div class="right-side">
 				<div class="header-widget " style="margin-top:20px">
-					<a target="_blank" href="https://www.facebook.com/wealthangels" class="sign-in popup-with-zoom-anim" style="margin-right: 5px;"> 
+					<a target="_blank" href="{{ setting()->facebook_url }}" class="sign-in " style="margin-right: 5px;"> 
 						<img src="{{ url('assets/images/facebook_logo.png') }}" alt=""> 
 					</a>
-					<a href="#" class="sign-in popup-with-zoom-anim"> <img src="{{ url('assets/images/line_logo.png') }}" alt=""> </a>
+					<a target="_blank" href="{{ setting()->line_oa_url }}" class="sign-in "> <img src="{{ url('assets/images/line_logo.png') }}" alt=""> </a>
 				</div>
 			</div> 
 			<!-- Right Side Content / End -->

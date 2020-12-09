@@ -1,8 +1,8 @@
 @extends('layouts.template')
 
-@section('ga')
-window.gaTitle = 'หน้าแรก';
-@endsection
+@section('title')
+ที่ปรึกษาด้านบัญชีและภาษีสำหรับองค์กร || Wealth Angels
+@stop
 
 @section('stylesheet')
 

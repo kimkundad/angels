@@ -56,15 +56,19 @@
 			<div class="col-md-3  col-sm-12">
 				<h4>Contact Us</h4>
 				<div class="text-widget">
-					Facebook: <span> <a target="_blank" href="https://www.facebook.com/wealthangels">Wealthangels</a> </span><br>
-					Line: <span><a href="#">line official account</a> </span><br>
-					Phone: <span><a href="#">(123) 123-456 </a></span><br>
-					E-Mail:<span> <a href="#">office@example.com</a> </span><br>
+					@if (Auth::guest())
+					@else
+					หลังบ้าน: <span> <a target="_blank" href="{{ url('admin/dashboard') }}">Dashboard</a> </span><br>
+					@endif
+					Facebook: <span> <a target="_blank" href="{{ setting()->facebook_url }}">{{ setting()->facebook }}</a> </span><br>
+					Line: <span><a href="{{ setting()->line_oa_url }}">{{ setting()->line_oa }}</a> </span><br>
+					Phone: <span><a href="#">{{ setting()->phone }}</a></span><br>
+					E-Mail:<span> <a href="#">{{ setting()->email }}</a> </span><br>
 				</div>
 
 				<ul class="social-icons margin-top-20">
-					<li><a target="_blank" class="facebook" href="https://www.facebook.com/wealthangels"><i class="icon-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+					<li><a target="_blank" class="facebook" href="{{ setting()->facebook_url }}"><i class="icon-facebook"></i></a></li>
+					<li><a target="_blank" class="twitter" href="{{ setting()->twitter }}"><i class="icon-twitter"></i></a></li>
 					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
 				</ul>
 				<div class="clearfix"></div>
@@ -79,7 +83,7 @@
 		<!-- Copyright -->
 		<div class="row">
 			<div class="col-md-12">
-				<div class="copyrights">© 2020 Wealth Angels. All Rights Reserved.</div>
+				<div class="copyrights">© 2020 {{ setting()->nme_website }}. All Rights Reserved.</div>
 			</div>
 		</div>
 
