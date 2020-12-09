@@ -17,6 +17,7 @@ class SettingSeeder extends Seeder
             'facebook' => 'Wealthangels',
             'facebook_url' => 'https://www.facebook.com/wealthangels',
             'facebook' => 'Wealthangels',
+            'facebook_image' => '1607528770.jpg',
             'phone' => '0958467417',
             'email' => 'thewealthangels@gmail.com'
             ]
