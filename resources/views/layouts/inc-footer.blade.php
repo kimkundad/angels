@@ -57,6 +57,7 @@
 				<h4>Contact Us</h4>
 				<div class="text-widget">
 					@if (Auth::guest())
+					 <span> <a href="{{ url('login') }}">เข้าสุ่ระบบ</a> </span><br>
 					@else
 					หลังบ้าน: <span> <a target="_blank" href="{{ url('admin/dashboard') }}">Dashboard</a> </span><br>
 					@endif
