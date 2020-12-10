@@ -38,6 +38,11 @@ window.gaTitle = 'หน้าแรก';
         </div>
 
         <div class="form-group">
+          <label for="exampleInputUsername1">รายละเอียดแบบย่อ <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="textareaAutosize" rows="5" name="sub_title" >{{ old('sub_title') }}</textarea>
+        </div>
+
+        <div class="form-group">
           <label for="exampleInputEmail1">รายละเอียด <span class="text-danger">*</span></label>
           <textarea class="summernote form-control" id="textareaAutosize" name="detail" >{{ old('detail') }}</textarea>
         </div>

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateBlogsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. sub_title
      *
      * @return void
      */
@@ -16,6 +16,7 @@ class CreateBlogsTable extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
+            $table->string('sub_title')->nullable();
             $table->string('image')->nullable();
             $table->longText('detail')->nullable();
             $table->integer('status')->default('0');

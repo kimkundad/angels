@@ -20,6 +20,13 @@
 .post-meta li {
     font-family: 'Prompt', sans-serif;
 }
+blockquote {
+    font-size: 15px;
+    font-family: 'Prompt', sans-serif;
+}
+h2.headline{
+    font-family: 'Prompt', sans-serif;
+}
 #navigation.style-1 {
     margin-top: 25px;
 }

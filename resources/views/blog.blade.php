@@ -71,7 +71,7 @@
 						
 					</ul>
 
-					<p>{!! mb_substr($u->detail, 0, 350, 'UTF-8') !!}</p>
+					<p>{!! $u->sub_title !!}</p>
 
 					<a href="{{ url('blog_detail/'.$u->id) }}" class="read-more">อ่านต่อ <i class="fa fa-angle-right"></i></a>
 				</div>

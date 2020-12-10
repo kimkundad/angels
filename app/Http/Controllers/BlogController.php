@@ -105,6 +105,7 @@ class BlogController extends Controller
 
       $package = new blog();
       $package->title = $request['title'];
+      $package->sub_title = $request['sub_title'];
       $package->detail = $request['detail'];
       $package->type = $request['type'];
       $package->image = $input['imagename'];
@@ -166,6 +167,7 @@ class BlogController extends Controller
 
       $package = blog::find($id);
       $package->title = $request['title'];
+      $package->sub_title = $request['sub_title'];
       $package->detail = $request['detail'];
       $package->type = $request['type'];
       $package->save();
