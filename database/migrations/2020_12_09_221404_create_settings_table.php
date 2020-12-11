@@ -28,6 +28,7 @@ class CreateSettingsTable extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->text('google_analytic')->nullable();
+            $table->longText('get_my_file')->nullable();
             $table->timestamps();
         });
     }
