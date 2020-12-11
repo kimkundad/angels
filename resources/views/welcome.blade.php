@@ -259,7 +259,7 @@
 			@endif
 
 			<div class="col-md-12 centered-content">
-				<a href="{{ url('blog') }}" class="button border margin-top-10">View Blog</a>
+				<a href="{{ url('blog') }}" class="button border margin-top-10">ดูบทความทั้งหมด</a>
 			</div>
 
 		</div>
