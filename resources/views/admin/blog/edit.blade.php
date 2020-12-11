@@ -96,6 +96,8 @@
 $(document).ready(function() {
   $('.summernote').summernote({
     height: 550,
+    fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48' , '64', '82', '150'],
+    fontNames: ['Arial', 'Prompt', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Roboto'],
     popover: {
             image: [
                 ['custom', ['imageAttributes']],
