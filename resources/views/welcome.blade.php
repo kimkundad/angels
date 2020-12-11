@@ -16,15 +16,19 @@
 
 <!-- 5.0.7 auto mode -->
 	<div id="rev_slider_4_1" class="rev_slider home fullwidthabanner" style="display:none;" data-version="5.0.7">
-		<ul>
+		<ul {{ $xx = 1 }}>
 
 			@if(isset($slide))
 			@foreach($slide as $u)
 			<!-- Slide  -->
-			<li data-index="rs-1" data-transition="fade" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="800" data-fsslotamount="7" data-saveperformance="off">
+			<li data-index="rs-{{$xx}}" data-transition="fade" data-slotamount="default"  
+			data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  
+			data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="800" data-fsslotamount="7" 
+			data-saveperformance="off">
 
 				<!-- Background -->
-				<img src="{{ url('img/slide/'.$u->image) }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
+				<img src="{{ url('img/slide/'.$u->image) }}" alt="" data-bgposition="center center" data-bgfit="cover" 
+				data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
 
 				<!-- Caption-->
 				<div class="tp-caption custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
@@ -69,7 +73,7 @@
 					<a href="{{ $u->url_btn }}" class="button medium">อ่านต่อ</a>
 				</div>
 
-			</li>
+			</li {{$xx++}}>
 			@endforeach
 			@endif
 
