@@ -124,9 +124,12 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 
         <!-- Share Buttons -->
         <ul class="share-buttons margin-top-40 margin-bottom-0">
-            <li><a class="fb-share" href="#"><i class="fa fa-facebook"></i> Share</a></li>
-            <li><a class="twitter-share" href="#"><i class="fa fa-twitter"></i> Tweet</a></li>
-            <li><a class="gplus-share" href="#"><i class="fa fa-google-plus"></i> Share</a></li>
+		<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/จัดตั้งกองทุนสำรองเลี้ยงชีพ') }}&t=จัดตั้งกองทุนสำรองเลี้ยงชีพ"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="จัดตั้งกองทุนสำรองเลี้ยงชีพ"><i class="fa fa-facebook"></i> Share</a></li>
+            <li><a class="twitter-share" href="https://twitter.com/share?url={{ url('/จัดตั้งกองทุนสำรองเลี้ยงชีพ') }}&via=wealthangels&text=จัดตั้งกองทุนสำรองเลี้ยงชีพ"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="จัดตั้งกองทุนสำรองเลี้ยงชีพ"><i class="fa fa-twitter"></i> Tweet</a></li>
         </ul>
         <div class="clearfix"></div>
 

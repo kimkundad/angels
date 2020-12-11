@@ -28,7 +28,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
              data-saveperformance="off">
 
 				<!-- Background -->
-				<img src="{{ url('assets/images/investment-debentures.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
+				<img src="{{ url('img/head/'.himage()->page7) }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
 
 				<!-- Caption-->
 				<div class="tp-caption custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
@@ -141,14 +141,12 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 
 <!-- Post Navigation -->
 <ul id="posts-nav" class="margin-top-0 margin-bottom-45">
-    <li class="next-post">
-        <a href="{{ url('ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน') }}"><span>Next</span>
-        ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน</a>
-    </li>
-    <li class="prev-post">
-        <a href="{{ url('จัดตั้งบริษัทโฮลดิ้ง_ทำแผนสืบทอดกิจการและธรรมนูญครอบครัว') }}"><span>Previous </span>
-        จัดตั้งบริษัทโฮลดิ้ง_ทำแผนสืบทอดกิจการและธรรมนูญครอบครัว</a>
-    </li>
+<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/สัมมนาให้ความรู้การเงินแก่พนักงาน') }}&t=สัมมนาให้ความรู้การเงินแก่พนักงาน"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="สัมมนาให้ความรู้การเงินแก่พนักงาน"><i class="fa fa-facebook"></i> Share</a></li>
+            <li><a class="twitter-share" href="https://twitter.com/share?url={{ url('/สัมมนาให้ความรู้การเงินแก่พนักงาน') }}&via=wealthangels&text=สัมมนาให้ความรู้การเงินแก่พนักงาน"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="สัมมนาให้ความรู้การเงินแก่พนักงาน"><i class="fa fa-twitter"></i> Tweet</a></li>
 </ul>
 
 

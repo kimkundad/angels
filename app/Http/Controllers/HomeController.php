@@ -147,6 +147,18 @@ class HomeController extends Controller
 
     }
 
+
+    public function get_doc(){
+
+      $cat = DB::table('settings')
+          ->where('id', 1)
+          ->first();
+
+          $data['objs'] = $cat;
+
+      return view('page4.page4', $data);
+    }
+
     public function blog_detail($id){
         $slide = DB::table('blogs')
                 ->Orderby('view', 'desc')

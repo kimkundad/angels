@@ -59,6 +59,14 @@
             </li>
 
             <li class="nav-item">
+              <a href="{{ url('admin/docs') }}" class="nav-link"><i class="link-icon icon-docs"></i><span class="menu-title">เอกสาร</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ url('admin/pics') }}" class="nav-link"><i class="link-icon icon-layers "></i><span class="menu-title">รูปภาพ</span></a>
+            </li>
+
+            <li class="nav-item">
               <a href="{{ url('admin/setting') }}" class="nav-link"><i class="link-icon icon-settings"></i><span class="menu-title">ตั้งค่า</span></a>
             </li>
             

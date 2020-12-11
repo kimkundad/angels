@@ -23,3 +23,12 @@ function setting(){
 
     return $cat;
   }
+
+  function himage(){
+
+    $cat = DB::table('head_images')
+          ->where('id', 1)
+          ->first();
+
+    return $cat;
+  }

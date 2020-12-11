@@ -28,7 +28,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
              data-saveperformance="off">
 
 				<!-- Background -->
-				<img src="{{ url('assets/images/investment-debentures.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
+				<img src="{{ url('img/head/'.himage()->page8) }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
 
 				<!-- Caption-->
 				<div class="tp-caption custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
@@ -122,9 +122,12 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 
         <!-- Share Buttons -->
         <ul class="share-buttons margin-top-40 margin-bottom-0">
-            <li><a class="fb-share" href="#"><i class="fa fa-facebook"></i> Share</a></li>
-            <li><a class="twitter-share" href="#"><i class="fa fa-twitter"></i> Tweet</a></li>
-            <li><a class="gplus-share" href="#"><i class="fa fa-google-plus"></i> Share</a></li>
+		<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน') }}&t=ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน"><i class="fa fa-facebook"></i> Share</a></li>
+            <li><a class="twitter-share" href="https://twitter.com/share?url={{ url('/ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน') }}&via=wealthangels&text=ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน"><i class="fa fa-twitter"></i> Tweet</a></li>
         </ul>
         <div class="clearfix"></div>
 

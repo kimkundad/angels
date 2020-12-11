@@ -159,7 +159,7 @@ class SlideController extends Controller
                  unlink($file_path);
               }
 
-              $path = 'img/slide/';
+            $path = 'img/slide/';
             $filename = time()."-".$image->getClientOriginalName();
             $image->move($path, $filename);
 

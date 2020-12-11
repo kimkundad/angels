@@ -11,6 +11,7 @@
   <script src="{{ url('back/js/todolist.js') }}"></script>
   <script src="{{ url('back/vendors/summernote/dist/summernote-bs4.min.js') }}"></script>
 <script src="{{ url('back/js/dropify.js') }}"></script>
+
   <!-- End custom js for this page-->
   <script>
   @if ($message = Session::get('add_success'))

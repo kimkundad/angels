@@ -105,11 +105,8 @@ Route::get('/คลาสสอนการเงินให้เด็กก�
 Route::get('/คลาสการเงินสำหรับผู้ใหญ่', function () {
     return view('page4.page3');
 });
-Route::get('/คำนวณการเงินแบบง่ายๆ', function () {
-    return view('page4.page4');
-});
 
-
+Route::get('/คำนวณการเงินแบบง่ายๆ', 'HomeController@get_doc');
 
 
 
@@ -118,7 +115,13 @@ Auth::routes();
 
 Route::group(['middleware' => ['UserRole:manager|employee']], function() {
 
+
     Route::get('admin/dashboard', 'DashboardController@index');
+    Route::get('admin/docs', 'DashboardController@docs');
+    Route::post('api/post_docs', 'DashboardController@post_docs')->name('post_docs');
+    Route::get('admin/pics', 'DashboardController@pics');
+    Route::post('api/post_pics', 'DashboardController@post_pics')->name('post_pics');
+
     Route::resource('admin/blog', 'BlogController');
     Route::post('/api/upload_img', 'BlogController@upload_img')->name('home');
     Route::get('api/del_blog/{id}', 'BlogController@del_blog')->name('del_blog');
