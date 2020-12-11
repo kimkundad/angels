@@ -78,9 +78,12 @@
 					
 					<!-- Share Buttons -->
 					<ul class="share-buttons margin-top-40 margin-bottom-0">
-						<li><a class="fb-share" href="#"><i class="fa fa-facebook"></i> Share</a></li>
-						<li><a class="twitter-share" href="#"><i class="fa fa-twitter"></i> Tweet</a></li>
-						<li><a class="gplus-share" href="#"><i class="fa fa-google-plus"></i> Share</a></li>
+					<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('blog_detail/'.$objs->id) }}&t={{ $objs->title }}"
+						onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+						target="_blank" title="{{ $objs->title }}"><i class="fa fa-facebook"></i> Share</a></li>
+									<li><a class="twitter-share" href="https://twitter.com/share?url={{ url('blog_detail/'.$objs->id) }}&via=wealthangels&text={{ $objs->title }}"
+						onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+						target="_blank" title="{{ $objs->title }}"><i class="fa fa-twitter"></i> Tweet</a></li>
 					</ul>
 					<div class="clearfix"></div>
 
