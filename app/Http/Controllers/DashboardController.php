@@ -13,7 +13,28 @@ class DashboardController extends Controller
 {
     //
     public function index(){
-        return view('admin.dashboard.index');
+
+        $blog = DB::table('blogs')
+                ->count();
+
+                $view = DB::table('blogs')
+                ->sum('view');
+
+                $data['view'] = $view;
+                $data['blog'] = $blog;
+
+                $slide = DB::table('slides')
+                ->count();
+
+                $data['slide'] = $slide;
+
+                $services = DB::table('our_services')
+                ->count();
+
+                $data['services'] = $services;
+
+
+        return view('admin.dashboard.index', $data);
     }
     public function docs(){
 

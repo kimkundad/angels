@@ -43,7 +43,7 @@
             </li>
            
             <li class="nav-item">
-              <a href="{{ url('admin/blog') }}" class="nav-link"><i class="link-icon icon-handbag"></i><span class="menu-title">บทความ</span></a>
+              <a href="{{ url('admin/blog') }}" class="nav-link"><i class="link-icon icon-pin"></i><span class="menu-title">บทความ</span></a>
             </li>
 
             <li class="nav-item">
