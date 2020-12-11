@@ -12,9 +12,9 @@
 
 @if(isset(setting()->facebook_image))
 <meta property="og:url" content="{{ url('/') }}">
-<meta property="og:title" content="{{ url('img/setting/'.setting()->facebook_image) }}">
+<meta property="og:title" content="{{ setting()->facebook_title }} ">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ setting()->facebook_title }}">
+<meta property="og:image" content="{{ url('img/setting/'.setting()->facebook_image) }}">
 <meta property="og:description" content="{{ setting()->facebook_detail }}">
 @endif
 
