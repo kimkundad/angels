@@ -170,4 +170,9 @@ b, strong {
     color: #eac8c8;
     border-top: 1px solid rgba(255,255,255,0.09);
 }
+@media screen and (max-width: 767px) {
+    .right-side {
+    display:none;
+}
+}
 </style>
