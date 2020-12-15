@@ -63,33 +63,11 @@
 
         <p>เราขอเป็นอีกแรงขับเคลื่อนพลังบวกให้ผู้หญิงในสังคมไทยมีความแข็งแกร่ง และเจนจัดทางด้านการเงิน แบบที่จะสามารถอยู่รอดอย่างมั่นคงและยั่งยืน ไม่ว่าวันนี้จะอายุเท่าไหร่ แต่คิดว่าสาวๆที่ติดตามเพจนี้ต้อง "รวยก่อนแก่" แน่นอน​</p>
 
-        
+        <br><br><br>
         
         <div class="row text-center">
-        <div class="col-md-4">
-			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09_746170276.jpg') }}">
-				<div class="img-box-content visible">
-				</div>
-			</a>
-           
-		</div>
-		<div class="col-md-4">
-			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09w_429562807.jpg') }}">
-				<div class="img-box-content visible">
-					
-				</div>
-			</a>
-		</div>
-		<div class="col-md-4">
-			<!-- Image Box -->
-			<a href="#" class="img-box" data-background-image="{{ url('assets/images/09w_735350089.jpg') }}">
-				<div class="img-box-content visible">
-					
-				</div>
-			</a>
-		</div>
+        
+		
 		
         </div>
         
