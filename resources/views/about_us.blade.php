@@ -37,7 +37,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
              data-saveperformance="off">
 
 				<!-- Background -->
-				<img src="{{ url('assets/images/investment-debentures.jpg') }}" alt="" 
+				<img src="{{ url('assets/img/about_us.jpg') }}" alt="" 
                 data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                  data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" 
                  data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" 
