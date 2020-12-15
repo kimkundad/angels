@@ -274,7 +274,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 			responsiveLevels:[1200,992,768,480],
 			visibilityLevels:[1200,992,768,480],
 			gridwidth:[1180,1024,778,480],
-			gridheight:[400,400,400,300],
+			gridheight:[650,650,400,300],
 			lazyType:"none",
 			parallax: {
 				type:"mouse",
