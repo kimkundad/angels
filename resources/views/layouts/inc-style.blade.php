@@ -175,4 +175,17 @@ b, strong {
     display:none;
 }
 }
+.img-box:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background-color: #222;
+    opacity: 0;
+    z-index: 99;
+    transition: 0.3s ease-out;
+}
 </style>

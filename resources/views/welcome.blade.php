@@ -110,9 +110,14 @@
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail/'.$u->id) }}" class="img-box" data-background-image="{{ url('img/blog/'.$u->image) }}">
 				<div class="img-box-content visible">
-					<h4>{{ $u->title }}</h4>
+					
 				</div>
+				
 			</a>
+			<div class="text-center">
+			<h4 style="font-size: 15px;line-height: 23px;">{{ $u->title }}</h4>
+			</div>
+			
 		</div>
 		@endforeach
 		@endif
