@@ -135,8 +135,8 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 <!-- Post Navigation -->
 <ul id="posts-nav" class="margin-top-0 margin-bottom-45">
     <li class="next-post">
-        <a href="{{ url('กองทุนรวม') }}"><span>Next</span>
-        หลักทรัพย์</a>
+        <a href="{{ url('สินทรัพย์_ทางเลือก') }}"><span>Next</span>
+        สินทรัพย์ ทางเลือก</a>
     </li>
     <li class="prev-post">
         <a href="{{ url('ประกันชีวิต') }}"><span>Previous </span>
@@ -217,7 +217,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					<li>
 						<div class="widget-content">
 							<div class="widget-text">
-								<h5><a href="{{ url('หลักทรัพย์') }}">หลักทรัพย์</a></h5>
+								<h5><a href="{{ url('สินทรัพย์_ทางเลือก') }}">สินทรัพย์ ทางเลือก</a></h5>
 							</div>
 							<div class="clearfix"></div>
 						</div>

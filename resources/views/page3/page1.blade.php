@@ -140,8 +140,8 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
         ประกันวินาศภัย</a>
     </li>
     <li class="prev-post">
-        <a href="{{ url('หลักทรัพย์') }}"><span>Previous </span>
-        หลักทรัพย์</a>
+        <a href="{{ url('สินทรัพย์_ทางเลือก') }}"><span>Previous </span>
+        สินทรัพย์ ทางเลือก</a>
     </li>
 </ul>
 
@@ -218,7 +218,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					<li>
 						<div class="widget-content">
 							<div class="widget-text">
-								<h5><a href="{{ url('หลักทรัพย์') }}">หลักทรัพย์</a></h5>
+								<h5><a href="{{ url('สินทรัพย์_ทางเลือก') }}">สินทรัพย์ ทางเลือก</a></h5>
 							</div>
 							<div class="clearfix"></div>
 						</div>

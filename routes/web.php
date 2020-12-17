@@ -93,7 +93,7 @@ Route::get('/ประกันวินาศภัย', function () {
 Route::get('/กองทุนรวม', function () {
     return view('page3.page3');
 });
-Route::get('/หลักทรัพย์', function () {
+Route::get('/สินทรัพย์_ทางเลือก', function () {
     return view('page3.page4');
 });
 
