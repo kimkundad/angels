@@ -312,7 +312,7 @@
 						enable:true,
 						hide_onmobile:false,
 						hide_under:600,
-						hide_onleave:true,
+						hide_onleave:false,
 						hide_delay:200,
 						hide_delay_mobile:1200,
 						tmp:'<div class="tp-title-wrap"></div>',
