@@ -67,7 +67,8 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					data-basealign="slide"
 					data-responsive_offset="off"
 					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน</div>
+					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; "></div>
+					<div class="caption-text">ให้คำปรึกษาสร้างสวัสดิการแก่พนักงาน</div>
 
 					
 					

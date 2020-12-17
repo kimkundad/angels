@@ -183,7 +183,11 @@ b, strong {
     display: block;
 }
 .caption-text{
-line-height: 28px !important;
+line-height: 24px !important;
+}
+.tp-caption.custom-caption-2 .button{
+    margin: 26px 5px 0px 0px!important;
+}
 }
 .img-box:before {
     position: absolute;

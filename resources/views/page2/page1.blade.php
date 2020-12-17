@@ -67,7 +67,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					data-basealign="slide"
 					data-responsive_offset="off"
 					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">สัมมนาให้ความรู้การเงินแก่พนักงาน</div>
+					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">สัมมนาให้ความรู้การเงินพนักงาน</div>
 
 					<div class="caption-text">ทีมงานของเรามีความชำนาญ ในการทำสัมมนาให้ความรู้ทางด้านการเงิน เพื่อให้บุคคลากรขององค์กรตระหนักรู้เรื่องความสำคัญของการวางแผนการเงินในองค์รวม  </div>
 					
