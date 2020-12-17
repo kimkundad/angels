@@ -1,6 +1,6 @@
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ url('assets/css/style.css') }}?v2">
 <link rel="stylesheet" href="{{ url('assets/css/colors/main.css') }}" id="colors">
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 <style>
