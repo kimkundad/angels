@@ -202,4 +202,9 @@ line-height: 24px !important;
     z-index: 99;
     transition: 0.3s ease-out;
 }
+
+.tp-dottedoverlay.twoxtwo				{	background:url('{{ url('img/gridtile.png') }}')}
+.tp-dottedoverlay.twoxtwowhite			{	background:url('{{ url('img/gridtile_white.png') }}')}
+.tp-dottedoverlay.threexthree			{	background:url('{{ url('img/gridtile_3x3.png') }}')}
+.tp-dottedoverlay.threexthreewhite		{	background:url('{{ url('img/gridtile_3x3_white.png') }}')}
 </style>
