@@ -371,7 +371,7 @@
 			stopAtSlide:-1,
 			shuffle:"off",
 			autoHeight:"off",
-			hideThumbsOnMobile:"on",
+			hideThumbsOnMobile:"off",
 			hideSliderAtLimit:0,
 			hideCaptionAtLimit:0,
 			hideAllCaptionAtLilmit:0,
