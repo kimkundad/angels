@@ -42,7 +42,7 @@ class HomeController extends Controller
 
         $blog = DB::table('blogs')
         ->Orderby('id', 'desc')
-        ->limit(3)
+        ->limit(6)
         ->get();
 
         $data['blog'] = $blog;
