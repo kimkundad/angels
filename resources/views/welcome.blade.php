@@ -104,23 +104,7 @@
 					ดังนั้นเวลาที่เค้าอยากได้อะไร เค้าจะรู้ถึงคุณค่าของเงินที่ได้มา เราไม่ควรให้ทุกอย่างแก่ลูกทันที อันไหนที่รอได้ก็อาจจะชวนให้ลูกทำงานเล็กๆน้อยๆ เก็บเงินเพื่อซื้อของสิ่งนั้น</p>
 		</div>
 		
-		@if(isset($objs))
-		@foreach($objs as $u)
-		<div class="col-md-3">
-			<!-- Image Box -->
-			<a href="{{ url('blog_detail/'.$u->id) }}" class="img-box" data-background-image="{{ url('img/blog/'.$u->image) }}">
-				<div class="img-box-content visible">
-					
-				</div>
-				
-			</a>
-			<div class="text-center">
-			<h4 style="font-size: 15px;line-height: 23px;">{{ $u->title }}</h4>
-			</div>
-			
-		</div>
-		@endforeach
-		@endif
+		
 		
 
 	</div>
@@ -185,7 +169,10 @@
 		<div class="col-md-8 col-md-offset-2">
 			<h2 class="headline centered margin-top-80">
 				วางแผนกับ Wealth Angels
-				<span class="margin-top-25" style="font-size: 18px;">อยากลงทุนแต่ไม่รู้จะเริ่มต้นอย่างไร หรือมีปัญหาที่ไม่รู้จะปรึกษาใคร ปรึกษาเราได้ในทุกเรื่องของการลงทุน วางใจให้ แองเจิ้ล</span>
+				<span class="margin-top-25" style="font-size: 18px;">
+				ครอบครัวสุขใจ
+ชีวิตครอบครัวเหมือนการเดินทาง วางแผนการเงิน เปรียบเหมือนวางแผนขีวิต หากเรามีการวางแผนการเงินที่ดี
+ ไม่ว่าจะเกิดเหตุการณ์อะไรขึ้นในชีวิต ทุกคนในครอบครัวยังคงเดินต่อไปตามที่ตั้งใจ</span>
 			</h2>
 		</div>
 	</div>
@@ -196,8 +183,8 @@
 			<div class="icon-box-2 with-line">
 				<i class="im im-icon-Heart"></i>
 				<h3>ครอบครัวสุขใจ</h3>
-				<p>ชุดที่ควรมีติดตัวไว้ในการทำธุรกรรมต่างๆ
-					ฟรีและสะดวก ในการทำธุรกรรมบน SCB EASY พร้อมสะดวกในการใช้จ่ายผ่านบัตรเดบิต</p>
+				<p>
+ชีวิตครอบครัวเหมือนการเดินทาง วางแผนการเงิน เปรียบเหมือนวางแผนขีวิต หากเรามีการวางแผนการเงินที่ดี ไม่ว่าจะเกิดเหตุการณ์อะไรขึ้นในชีวิต ทุกคนในครอบครัวยังคงเดินต่อไปตามที่ตั้งใจ</p>
 			</div>
 		</div>
 
@@ -206,7 +193,8 @@
 			<div class="icon-box-2 with-line">
 				<i class="im im-icon-Love-User"></i>
 				<h3>เกษียณอุ่นใจ</h3>
-				<p>ออมสะดวก เช็คยอดง่าย ได้ดอกสูง สร้างวินัยในการออมเพื่ออนาคตที่มั่นคง รับดอกเบี้ยสูงกว่าเงินฝากปกติ แถมปลอดภาษี</p>
+				<p>
+เกษียณสุข อยู่สบาย ไร้กังวลเจ็บป่วยมั่นใจมีสวัสดิการรองรับ รวยก่อนแก่ มีเงินเหลือส่งต่อลูกหลาน ทำได้หากวางแผน</p>
 			</div>
 		</div>
 
@@ -215,8 +203,8 @@
 			<div class="icon-box-2">
 				<i class="im im-icon-Idea-2"></i>
 				<h3>ธุรกิจมั่งมี</h3>
-				<p>เปิดบัญชีกองทุนง่ายๆ สะดวกกว่าด้วยการซื้อขายกองทุนบนมือถือ
-					ครอบคลุมทุกช่องทางการลงทุน</p>
+				<p>
+ วางแผนภาษีองค์กรแบบระยะยาวทำได้จริง สบายใจเรื่องสวัสดิการบุคคากร ส่งต่อกิจการรุ่นพ่อสู่รุ่นลูกอย่างเป็นระบบ</p>
 			</div>
 		</div>
 	</div>
@@ -240,32 +228,23 @@
 
 		<div class="row">
 
-			@if(isset($blog))
-			@foreach($blog as $u)
-			<!-- Blog Post Item -->
-			<div class="col-md-4">
-				<a href="{{ url('blog_detail/'.$u->id) }}" class="blog-compact-item-container">
-					<div class="blog-compact-item">
-						<img src="{{ url('img/blog/'.$u->image) }}" alt="{{ $u->title }}">
-						@if($u->type == 0)
-						<span class="blog-item-tag">Tips</span>
-						@else
-						<span class="blog-item-tag">Stories</span>
-						@endif
-						
-						<div class="blog-compact-item-content">
-							<ul class="blog-post-tags">
-								<li>{{ formatDateThat($u->created_at) }}</li>
-							</ul>
-							<h3>{{ $u->title }}</h3>
-							
-						</div>
-					</div>
-				</a>
+			
+
+
+		@if(isset($blog))
+		@foreach($blog as $u)
+		<div class="col-md-3">
+			<!-- Image Box -->
+			<a href="{{ url('blog_detail/'.$u->id) }}" class="img-box" data-background-image="{{ url('img/blog/'.$u->image) }}">
+				<div class="img-box-content visible">
+				</div>
+			</a>
+			<div class="text-center">
+			<h4 style="font-size: 15px;line-height: 23px;height: 46px; overflow: hidden;">{{ $u->title }}</h4>
 			</div>
-			<!-- Blog post Item / End -->
-			@endforeach
-			@endif
+		</div>
+		@endforeach
+		@endif
 
 			<div class="col-md-12 centered-content">
 				<a href="{{ url('บทความการเงิน') }}" class="button border margin-top-10">ดูบทความทั้งหมด</a>
