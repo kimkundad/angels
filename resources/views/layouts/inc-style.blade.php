@@ -174,6 +174,16 @@ b, strong {
     .right-side {
     display:none;
 }
+.headline span {
+    font-size: 19px;
+    line-height: 36px;
+    margin-top: 10px;
+    color: #888;
+    font-weight: 300;
+    display: block;
+}
+.caption-text{
+line-height: 28px !important;
 }
 .img-box:before {
     position: absolute;
