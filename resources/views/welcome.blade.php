@@ -292,7 +292,7 @@
 				sliderType:"standard",
 				jsFileLocation:"scripts/",
 				sliderLayout:"auto",
-				dottedOverlay:"twoxtwo",
+				dottedOverlay:"none",
 				delay:9000,
 				navigation: {
 					keyboardNavigation:"on",
@@ -310,7 +310,7 @@
 					arrows: {
 						style:"zeus",
 						enable:true,
-						hide_onmobile:true,
+						hide_onmobile:false,
 						hide_under:600,
 						hide_onleave:true,
 						hide_delay:200,
@@ -331,21 +331,19 @@
 					}
 					,
 					bullets: {
-				enable:false,
-				hide_onmobile:true,
-				hide_under:600,
-				style:"hermes",
-				hide_onleave:true,
-				hide_delay:200,
-				hide_delay_mobile:1200,
-				direction:"horizontal",
-				h_align:"center",
-				v_align:"bottom",
-				h_offset:0,
-				v_offset:32,
-				space:5,
-				tmp:''
-					}
+					enable:true,
+					hide_onmobile:false,
+					hide_under:1025,
+					style:"softwerk-white",
+					hide_onleave:false,
+					direction:"horizontal",
+					h_align:"center",
+					v_align:"bottom",
+					h_offset:0,
+					v_offset:70,
+					space:30,
+					tmp:''
+				}
 				},
 				viewPort: {
 					enable:true,

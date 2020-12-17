@@ -180,8 +180,8 @@ website:   	http://www.themepunch.com
 .tp-forcenotvisible,
 .tp-hide-revslider,
 .tp-caption.tp-hidden-caption {	
-	visibility:hidden !important; 
-	display:none !important
+/*	visibility:hidden !important; 
+	display:none !important */
 }
 
 .rev_slider embed,
