@@ -7,84 +7,172 @@
 
 @section('stylesheet')
 
+<style>
+.persephone.tparrows {
+    cursor: pointer;
+    background: #aaa;
+    background: rgba(200,200,200,0.1);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    border: 1px solid #8d8c8b;
+}
+
+.persephone.tparrows:before {
+    font-family: "simple-line-icons";
+    font-size: 15px;
+    color: #cccccc;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+}
+.persephone.tparrows:hover {
+    cursor: pointer;
+    background: #b87887;
+    border: 3px solid #ad4c63;
+}
+.persephone.tparrows {
+	cursor:pointer;
+	background:#aaa;
+	background:rgba(200,200,200,0.5);
+	width:40px;
+	height:40px;
+	position:absolute;
+	display:block;
+	z-index:100;
+  border:1px solid #f5f5f5;
+}
+
+.persephone.tparrows.tp-leftarrow:before {
+	content: '\e605';
+}
+.persephone.tparrows.tp-rightarrow:before {
+	content: '\e606';
+}
+/*------------------------------------------------------------------
+[ Slider ]*/
+.rs1-revo .tp-caption {
+  white-space: normal !important;
+}
+
+.rs1-revo .txt-center {
+  text-align: center !important;
+}
+
+.rs1-revo .m-txt1,
+.rs1-revo .m-txt2 {
+  font-size: 16px !important;
+}
+
+.rs1-revo .trans-03 {
+  -webkit-transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+
+.rs1-revo .wrap-btn-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .rs1-revo .wrap-btn-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.btn-slide{
+	width:85px;
+}
+.tp-caption{
+	color:#fff;
+}
+.slotholder:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    /* background: rgba(38, 38, 38, 0.5); */
+    background-color: #303133;
+    opacity: 0.55;
+    z-index: 9999;
+}
+</style>
 
 @stop('stylesheet')
 
 @section('content')
 <!-- Revolution Slider -->
-<div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- Slide -->
 
-<!-- 5.0.7 auto mode -->
-	<div id="rev_slider_4_1" class="rev_slider home fullwidthabanner" style="display:none;" data-version="5.0.7">
-		<ul {{ $xx = 1 }}>
-
-			@if(isset($slide))
+    <div class="rev_slider_wrapper fullwidthbanner-container rs1-revo">
+      <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.5" style="display:none">
+        <ul>
+          <!-- Slide 1 -->
+		  @if(isset($slide))
 			@foreach($slide as $u)
-			<!-- Slide  -->
-			<li data-index="rs-{{$xx}}" data-transition="fade" data-slotamount="default"  
-			data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  
-			data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="800" data-fsslotamount="7" 
-			data-saveperformance="off">
+          <li data-transition="fade">
+            <img src="{{ url('img/slide/'.$u->image) }}" alt="{{ $u->title }}" class="rev-slidebg">
 
-				<!-- Background -->
-				<img src="{{ url('img/slide/'.$u->image) }}" alt="" data-bgposition="center center" data-bgfit="cover" 
-				data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0">
+            <h2 class="tp-caption tp-resizeme txt1 txt-center p-l-15 p-r-15"
+            data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"x:left;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-x="center"
+              data-y="center"
+              data-width="['1200','992','768','480']"
+              data-hoffset="['0','0','0','0']"
+              data-voffset="['-85','-85','-85','-160']"
+              data-fontsize="['40', '40', '35', '28']"
+              data-lineheight="['60', '60', '60', '60']"
+              data-height="['auto']"
+              >{{ $u->title }}</h2>
 
-				<!-- Caption-->
-				<div class="tp-caption custom-caption-2 tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
-					id="slide-1-layer-2" 
-					data-x="['left','left','left','left']"
-					data-hoffset="['0','40','40','40']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['0']" 
-					data-width="['640','640', 640','420','320']"
-					data-height="auto"
-					data-whitespace="nowrap"
-					data-transform_idle="o:1;"	
-					data-transform_in="y:0;opacity:0;s:1000;e:Power2.easeOutExpo;s:400;e:Power2.easeOutExpo" 
-					data-transform_out="" 
-					data-mask_in="x:0px;y:[20%];s:inherit;e:inherit;" 
-					data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-					data-start="1000" 
-					data-responsive_offset="on">
+              <p class="tp-caption tp-resizeme txt2 txt-center p-l-15 p-r-15"
+            data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-x="center"
+              data-y="center"
+              data-width="['780','780','780','480']"
+              data-hoffset="['0','0','0','0']"
+              data-voffset="['-10','-10','-10','-50']"
+              data-fontsize="['18', '16', '14', '14']"
+              data-lineheight="['30', '30', '30', '30']"
+              data-height="['auto']"
+              >{{ $u->detail }}
+              </p>
 
-					<!-- Caption Content -->
-					<div class="R_title margin-bottom-15"
-					id="slide-2-layer-1"
-					data-x="['left','center','center','center']"
-					data-hoffset="['0','0','40','0']"
-					data-y="['middle','middle','middle','middle']"
-					data-voffset="['-40','-40','-20','-80']"
-					data-fontsize="['28','28', '22','22','22']"
-					data-lineheight="['70','60','60','45','35']"
-					data-width="['640','640', 640','420','320']"
-					data-height="none" data-whitespace="normal"
-					data-transform_idle="o:1;"
-					data-transform_in="y:-50px;sX:2;sY:2;opacity:0;s:1000;e:Power4.easeOut;"
-					data-transform_out="opacity:0;s:300;"
-					data-start="600"
-					data-splitin="none"
-					data-splitout="none"
-					data-basealign="slide"
-					data-responsive_offset="off"
-					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">{{ $u->title }}</div>
+              <div class="tp-caption tp-resizeme wrap-btn-slide"
+              data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-x="center"
+              data-y="center"
+              data-hoffset="['0','0','0','0']"
+              data-voffset="['75','75','75','90']"
+              data-height="['auto']">
+              <div class="p-l-10 p-r-10 p-t-5 p-b-5">
+                <!-- Button -->
+                <a href="{{ $u->url_btn }}" class="button medium btn-slide">อ่านต่อ</a>
+              </div>
+              </div>
 
-					<div class="caption-text">{{ $u->detail }}</div>
-					<a href="{{ $u->url_btn }}" class="button medium">อ่านต่อ</a>
-				</div>
-
-			</li {{$xx++}}>
-			@endforeach
+          </li>
+		  @endforeach
 			@endif
 
-			
-			
+          
 
-		</ul>
-		<div class="tp-static-layers"></div>
 
-	</div>
-</div>
+        </ul>
+      </div>
+    </div>
+  
 <!-- Revolution Slider / End -->
 
 
@@ -282,106 +370,8 @@
 <script type="text/javascript" src="{{ url('assets/scripts/themepunch.revolution.min.js') }}"></script>
 
 <script type="text/javascript">
-	var tpj=jQuery;			
-	var revapi4;
-	tpj(document).ready(function() {
-		if(tpj("#rev_slider_4_1").revolution == undefined){
-			revslider_showDoubleJqueryError("#rev_slider_4_1");
-		}else{
-			revapi4 = tpj("#rev_slider_4_1").show().revolution({
-				sliderType:"standard",
-				jsFileLocation:"scripts/",
-				sliderLayout:"auto",
-				dottedOverlay:"none",
-				delay:9000,
-				navigation: {
-					keyboardNavigation:"on",
-					keyboard_direction: "horizontal",
-					mouseScrollNavigation:"off",
-					onHoverStop:"on",
-					touch:{
-						touchenabled:"on",
-						swipe_threshold: 75,
-						swipe_min_touches: 1,
-						swipe_direction: "horizontal",
-						drag_block_vertical: false
-					}
-					,
-					arrows: {
-						style:"zeus",
-						enable:true,
-						hide_onmobile:false,
-						hide_under:600,
-						hide_onleave:false,
-						hide_delay:200,
-						hide_delay_mobile:1200,
-						tmp:'<div class="tp-title-wrap"></div>',
-						left: {
-							h_align:"left",
-							v_align:"center",
-							h_offset:40,
-							v_offset:0
-						},
-						right: {
-							h_align:"right",
-							v_align:"center",
-							h_offset:40,
-							v_offset:0
-						}
-					}
-					,
-					bullets: {
-					enable:true,
-					hide_onmobile:false,
-					hide_under:1025,
-					style:"softwerk-white",
-					hide_onleave:false,
-					direction:"horizontal",
-					h_align:"center",
-					v_align:"bottom",
-					h_offset:0,
-					v_offset:70,
-					space:30,
-					tmp:''
-				}
-				},
-				viewPort: {
-					enable:true,
-					outof:"pause",
-					visible_area:"80%"
-			},
-			responsiveLevels:[1200,992,768,480],
-			visibilityLevels:[1200,992,768,480],
-			gridwidth:[1180,1024,778,480],
-			gridheight:[640,500,400,300],
-			lazyType:"none",
-			parallax: {
-				type:"mouse",
-				origo:"slidercenter",
-				speed:2000,
-				levels:[2,3,4,5,6,7,12,16,10,25,47,48,49,50,51,55],
-				type:"mouse",
-			},
-			shadow:0,
-			spinner:"off",
-			stopLoop:"off",
-			stopAfterLoops:-1,
-			stopAtSlide:-1,
-			shuffle:"off",
-			autoHeight:"off",
-			hideThumbsOnMobile:"off",
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			debugMode:false,
-			fallbacks: {
-				simplifyAll:"off",
-				nextSlideOnWindowFocus:"off",
-				disableFocusListener:false,
-			}
-		});
-		}
-	});	/*ready*/
+
+
 </script>	
 
 

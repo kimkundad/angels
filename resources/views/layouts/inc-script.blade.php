@@ -11,7 +11,7 @@
 <script type="text/javascript" src="{{ url('assets/scripts/jquery-ui.min.js') }}"></script>
 <script type="text/javascript" src="{{ url('assets/scripts/tooltips.min.js') }}"></script>
 <script type="text/javascript" src="{{ url('assets/scripts/custom.js') }}"></script>
-
+<script src="{{url('assets/js/slide-custom.js')}}"></script>
 
 
 {!! setting()->google_analytic !!}
