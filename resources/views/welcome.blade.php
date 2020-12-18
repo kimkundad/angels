@@ -138,7 +138,7 @@ padding-right:15px;
               data-hoffset="['0','0','0','0']"
               data-voffset="['-85','-85','-85','-160']"
               data-fontsize="['40', '40', '35', '28']"
-              data-lineheight="['60', '60', '60', '60']"
+              data-lineheight="['40', '40', '40', '40']"
               data-height="['auto']"
               >{{ $u->title }}</h2>
 
