@@ -30,7 +30,7 @@
 				<p>ใครมีข้อส่งสัยเกี่ยวกับการวางแผนการเงินส่วนบุคคล สามารถส่งข้อความมาหาพวกเราได้เลย พวกเราเหล่าแองเจิ้ลพร้อมให้คำปรึกษา</p>
 
 				<ul class="contact-details">
-					
+        <li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>{{ setting()->phone }}</span></li>
           <li><i class="im im-icon-Facebook"></i> <strong>Facebook:</strong> <span><a target="_blank" href="{{ setting()->facebook_url }}">{{ setting()->facebook }}</a> </span></li>
 					<li><i class="im im-icon-Speach-Bubble11"></i> <strong>Line:</strong> <span><a href="{{ setting()->line_oa_url }}">{{ setting()->line_oa }}</a></span></li>
 					<li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">{{ setting()->email }}</a></span></li>

@@ -63,7 +63,7 @@
 					@endif
 					Facebook: <span> <a target="_blank" href="{{ setting()->facebook_url }}">{{ setting()->facebook }}</a> </span><br>
 					Line: <span><a href="{{ setting()->line_oa_url }}">{{ setting()->line_oa }}</a> </span><br>
-					
+					Phone: <span><a href="#">{{ setting()->phone }} </a></span><br>
 					E-Mail:<span> <a href="#">{{ setting()->email }}</a> </span><br>
 				</div>
 

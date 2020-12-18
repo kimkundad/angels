@@ -31,7 +31,7 @@ h2.headline{
     margin-top: 25px;
 }
 #logo {
-    margin-right: 15px;
+    margin-right: 12px;
 }
 .header-widget .sign-in img{
     width:32px;
@@ -47,8 +47,8 @@ h2.headline{
 }
 #navigation.style-1 ul a {
     line-height: 32px;
-    padding: 5px 5px;
-    font-size: 15px;
+    padding: 5px 4px;
+    font-size: 14px;
 }
 .widget-text {
     width: 100%;
