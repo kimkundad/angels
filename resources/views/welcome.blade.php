@@ -336,7 +336,7 @@
 
 		@if(isset($blog))
 		@foreach($blog as $u)
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<!-- Image Box -->
 			<a href="{{ url('blog_detail/'.$u->id) }}" class="img-box" data-background-image="{{ url('img/blog/'.$u->image) }}">
 				<div class="img-box-content visible">
