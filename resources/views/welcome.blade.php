@@ -90,6 +90,7 @@
 }
 .btn-slide{
 	width:85px;
+	font-size:13px!important;
 }
 .tp-caption{
 	color:#fff;
