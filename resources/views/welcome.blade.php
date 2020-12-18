@@ -89,7 +89,7 @@
   }
 }
 .btn-slide{
-	width:85px;
+	min-width:80px;
 	font-size:13px!important;
 }
 .tp-caption{
