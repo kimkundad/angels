@@ -114,6 +114,9 @@
 .p-r-15{
 padding-right:15px;
 }
+.img-box {
+    height: 240px;
+}
 </style>
 
 @stop('stylesheet')
