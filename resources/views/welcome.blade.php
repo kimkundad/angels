@@ -107,6 +107,12 @@
     opacity: 0.55;
     z-index: 9999;
 }
+.p-l-15{
+ padding-left:15px;
+} 
+.p-r-15{
+padding-right:15px;
+}
 </style>
 
 @stop('stylesheet')
