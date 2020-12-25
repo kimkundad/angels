@@ -136,7 +136,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 <ul id="posts-nav" class="margin-top-0 margin-bottom-45">
     <li class="next-post">
         <a href="{{ url('สินทรัพย์_ทางเลือก') }}"><span>Next</span>
-        สินทรัพย์ ทางเลือก</a>
+        สินทรัพย์ทางเลือก</a>
     </li>
     <li class="prev-post">
         <a href="{{ url('ประกันชีวิต') }}"><span>Previous </span>

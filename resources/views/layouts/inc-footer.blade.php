@@ -37,11 +37,14 @@
 			</div>	
 
 			<div class="col-md-3 col-sm-12 ">
-				<h4>แบ่งปันความรู้การเงิน</h4>
+				<h4>คลาสการเงิน</h4>
 				<ul class="footer-links">
-					<li><a href="{{ url('บทความการเงิน') }}">บทความการเงิน</a></li>
 					<li><a href="{{ url('คลาสสอนการเงินให้เด็กก่อนวัยรุ่น') }}#"> คลาสสอนการเงินให้เด็กก่อนวัยรุ่น</a></li>
 					<li><a href="{{ url('คลาสการเงินสำหรับผู้ใหญ่') }}">คลาสการเงินสำหรับผู้ใหญ่</a></li>
+
+					<h4>Blog</h4>
+				<ul class="footer-links">
+					<li><a href="{{ url('บทความการเงิน') }}">บทความการเงิน</a></li>
 					<li><a href="{{ url('คำนวณการเงินแบบง่ายๆ') }}#"> คำนวณการเงินแบบง่ายๆ</a></li>
 				
 					<h4>ผลิตภัณฑ์ทางการเงิน</h4>
@@ -49,7 +52,7 @@
 						<li><a href="{{ url('ประกันชีวิต') }}#">ประกันชีวิต</a></li>
 						<li><a href="{{ url('ประกันวินาศภัย') }}#"> ประกันวินาศภัย</a></li>
 						<li><a href="{{ url('กองทุนรวม') }}#">กองทุนรวม</a></li>
-						<li><a href="{{ url('หลักทรัพย์') }}"> หลักทรัพย์</a></li>
+						<li><a href="{{ url('สินทรัพย์_ทางเลือก') }}"> สินทรัพย์ทางเลือก</a></li>
 				
 			</div>	
 
@@ -67,11 +70,11 @@
 					E-Mail:<span> <a href="#">{{ setting()->email }}</a> </span><br>
 				</div>
 
-				<ul class="social-icons margin-top-20">
+				<!--<ul class="social-icons margin-top-20">
 					<li><a target="_blank" class="facebook" href="{{ setting()->facebook_url }}"><i class="icon-facebook"></i></a></li>
 					<li><a target="_blank" class="twitter" href="{{ setting()->twitter }}"><i class="icon-twitter"></i></a></li>
 					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
-				</ul>
+				</ul> -->
 				<div class="clearfix"></div>
 			</div>
 			

@@ -67,7 +67,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 					data-basealign="slide"
 					data-responsive_offset="off"
 					data-responsive="off"
-					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">หลักทรัพย์</div>
+					style="z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; ">สินทรัพย์ทางเลือก</div>
              
 					
 					
@@ -105,7 +105,7 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
     <!-- Content -->
     <div class="post-content">
 
-        <h3>หลักทรัพย์</h3>
+        <h3>สินทรัพย์ทางเลือก</h3>
 
 
         <p>
@@ -114,12 +114,12 @@ style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;m
 </p>
         <!-- Share Buttons -->
         <ul class="share-buttons margin-top-40 margin-bottom-0">
-		<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/หลักทรัพย์') }}&t=หลักทรัพย์"
+		<li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/สินทรัพย์_ทางเลือก') }}&t=สินทรัพย์ทางเลือก"
    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" title="หลักทรัพย์"><i class="fa fa-facebook"></i> Share</a></li>
-            <li><a class="twitter-share" href="https://twitter.com/share?url={{ url('/หลักทรัพย์') }}&via=wealthangels&text=หลักทรัพย์"
+   target="_blank" title="สินทรัพย์ทางเลือก"><i class="fa fa-facebook"></i> Share</a></li>
+            <li><a class="twitter-share" href="https://twitter.com/share?url={{ url('/สินทรัพย์_ทางเลือก') }}&via=wealthangels&text=สินทรัพย์ทางเลือก"
    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" title="หลักทรัพย์"><i class="fa fa-twitter"></i> Tweet</a></li>
+   target="_blank" title="สินทรัพย์ทางเลือก"><i class="fa fa-twitter"></i> Tweet</a></li>
         </ul>
         <div class="clearfix"></div>
 
