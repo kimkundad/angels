@@ -54,7 +54,7 @@
 			<div class="blog-post single-post">
 				
 				<!-- Img -->
-				<img class="post-img" src="{{ url('img/blog/'.$objs->image) }}" alt="">
+				<!-- <img class="post-img" src="{{ url('img/blog/'.$objs->image) }}" alt="{{ $objs->title }}"> -->
 
 				
 				<!-- Content -->
