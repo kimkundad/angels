@@ -60,6 +60,87 @@
           </div>
 
 
+          <div class="row">
+          
+
+            <div class="col-md-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">นัดปรึกษาครั้งแรก</h4>
+
+                      <div class="table-responsive">
+
+
+                      <table class="table">
+                        <thead>
+
+                          <tr>
+                            <th>ชื่อ-นามสกุล</th>
+                            <th>เพศ</th>
+                            <th>อายุ</th>
+                            <th>เบอร์โทร</th>
+                            <th>ID line</th>
+                            <th>อาชีพ</th>
+                            <th>หัวข้อ</th>
+                            <th>อื่นๆระบุ</th>
+
+							              <th>วันที่</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                      
+						@if(isset($objs))
+                      @foreach($objs as $u)
+                          <tr>
+                            <td>
+                              {{$u->name}}
+                            </td>
+
+                            <td>
+                              {{$u->sex}}
+                            </td>
+                            <td>
+                              {{$u->age}}
+                            </td>
+                            <td>
+                              {{$u->phone}}
+                            </td>
+                            <td>
+                              {{$u->line}}
+                            </td>
+                            <td>
+                              {{$u->career}}
+                            </td>
+                            <td>
+                              {{$u->subject}}
+                            </td>
+                            <td>
+                              {{$u->subject2}}
+                            </td>
+                            
+							              <td>
+                              {{$u->created_at}}
+                            </td>
+                           
+                          </tr>
+                          @endforeach
+                          @endif
+
+
+                        </tbody>
+                      </table>
+                      </div>
+					  {{ $objs->links() }}
+                    </div>
+                  </div>
+                </div>
+
+
+         
+          </div>
+
+
 
 @endsection
 

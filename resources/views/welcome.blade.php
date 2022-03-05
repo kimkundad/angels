@@ -117,6 +117,14 @@ padding-right:15px;
 .img-box {
     height: 240px;
 }
+.main-search-container:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to right, rgb(255 255 255 / 0%) 20%, rgb(255 255 255 / 0%) 70%, rgba(255,255,255,0) 95%);
+}
 </style>
 
 @stop('stylesheet')
@@ -224,10 +232,49 @@ padding-right:15px;
 </div>
 <!-- Container / End -->
 
+<style>
+	.new_box_search h2{
+		color:#fff;
+		font-family: 'Prompt', sans-serif;
+	}
+	.new_box_search h4{
+		color:#fff;
+		font-family: 'Prompt', sans-serif;
+		font-size: 18px;
+	}
+	.new_box_search p{
+		color:#fff;
+		font-family: 'Prompt', sans-serif;
+	}
+</style>
+
+<div class="main-search-container" data-background-image="{{ url('img/1000-pix-QP1C7434.jpg') }}">
+	<div class="main-search-inner">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center new_box_search">
+					<br>
+					<h2>นัดปรึกษาครั้งแรก</h2>
+					<h4>เราคือ นักวางแผนการเงินมืออาชีพ ที่ให้บริการครบวงจร มีอิสระในการเลือกสินค้าทางการเงิน และมีประสบการณ์การวางแผนการเงินมาอย่างยาวนาน</h4>
+					<h4>ราไม่เพียงออกแบบเป้าหมายและแผนการเงินเฉพาะบุคคล เรายังช่วยดูแลและอยู่เคียงข้างเพื่อให้คำปรึกษาและปรับเปลี่ยนแผนตลอดการเดินทางของชีวิตคุณ</h4>
+					<h4>สนใจนัดปรึกษาเบื้องต้น (ไม่มีค่าใช้จ่าย) </h4>
+
+					<a href="{{ url('add_contact_first') }}" class="button preview">คลิก </a>
+					<h4>การวางแผนการเงิน ยิ่งเริ่มเร็วยิ่งดี ไม่เริ่มวันนี้ อาจจะสายเกิน</h4>
+					
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
 
 
 <!-- Fullwidth Section -->
-<section class="fullwidth margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
+<section class="fullwidth padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
 
 	<div class="container">
 		<div class="row">

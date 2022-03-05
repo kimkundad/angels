@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\DB;
 use App\blog;
+use App\addContact;
 
 use Illuminate\Http\Request;
 
@@ -56,6 +57,94 @@ class HomeController extends Controller
         $data['slide'] = $slide;
 
         return view('welcome', $data);
+    }
+
+
+    public function add_contact_2(Request $request){
+
+
+      $secret="6LdBOl8UAAAAAM-iNnghy4tPxFpCOPG6J1Hg8xLu";
+    //  $response = $request['captcha'];
+
+      $captcha = "";
+      if (isset($request["g-recaptcha-response"]))
+        $captcha = $request["g-recaptcha-response"];
+
+    //  $verify=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response");
+      $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]), true);
+      //$captcha_success=json_decode($verify);
+
+    //  dd($captcha_success);
+
+    if($response["success"] == false) {
+
+        return response()->json([
+          'data' => [
+            'status' => 100,
+            'msg' => 'This user was not verified by recaptcha.'
+          ]
+        ]);
+
+      }else{
+
+        $subject = $request['subject'];
+
+        $admins = '';
+
+       /* if (sizeof($subject) > 0) {
+          for ($i = 0; $i < sizeof($subject); $i++) {
+            $admins+= ' '.$subject[$i];
+          }
+      
+        } */
+
+        $admins=implode(",",$subject);
+
+        $message = 'ชื่อ-นามสกุล:'.$request['name'].", เพศ:".$request['sex'].", อายุ".$request['age'].", เบอรืโทร:".$request['phone'] .", อายุ:".$request['phone'].", line ID: ".$request['line']." , อาชีพ: ".$request['career'].", หัวข้อที่อยากปรึกษา : ".$admins.", อื่นๆ:".$request['comments'];
+        $lineapi = setting()->line_token;
+
+        $mms =  trim($message);
+        $chOne = curl_init();
+        curl_setopt($chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify");
+        curl_setopt($chOne, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($chOne, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($chOne, CURLOPT_POST, 1);
+        curl_setopt($chOne, CURLOPT_POSTFIELDS, "message=$mms");
+        curl_setopt($chOne, CURLOPT_FOLLOWLOCATION, 1);
+        $headers = array('Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer '.$lineapi.'',);
+        curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($chOne, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($chOne);
+        if(curl_error($chOne)){
+        echo 'error:' . curl_error($chOne);
+        }else{
+        $result_ = json_decode($result, true);
+    //    echo "status : ".$result_['status'];
+    //    echo "message : ". $result_['message'];
+        }
+        curl_close($chOne);
+
+
+       $package = new addContact();
+       $package->name = $request['name'];
+       $package->sex = $request['sex'];
+       $package->age = $request['age'];
+       $package->phone = $request['phone'];
+       $package->line = $request['line'];
+       $package->career = $request['career'];
+       $package->subject = $admins;
+       $package->subject2 = $request['comments'];
+       $package->save();
+
+        return response()->json([
+            'data' => [
+              'status' => 200,
+              'msg' => 'This user is verified by recaptcha.'
+            ]
+          ]);
+
+      }
+
     }
 
 

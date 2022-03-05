@@ -27,8 +27,15 @@ Route::get('/blog_detail/{id}', 'HomeController@blog_detail');
 
 Route::post('/api/add_contact', 'HomeController@add_contact')->name('add_contact');
 
+Route::post('/api/add_contact_2', 'HomeController@add_contact_2')->name('add_contact_2');
+
+
 Route::get('/about_us', function () {
     return view('about_us');
+});
+
+Route::get('/add_contact_first', function () {
+    return view('add_contact_first');
 });
 
 Route::get('/contact_us', function () {

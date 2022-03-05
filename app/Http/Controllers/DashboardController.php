@@ -33,6 +33,12 @@ class DashboardController extends Controller
 
                 $data['services'] = $services;
 
+                $objs = DB::table('add_contacts')
+                ->Orderby('id', 'desc')
+                ->paginate(15);
+
+        $data['objs'] = $objs;
+
 
         return view('admin.dashboard.index', $data);
     }
