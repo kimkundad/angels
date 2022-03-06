@@ -100,7 +100,7 @@ class HomeController extends Controller
 
         $admins=implode(",",$subject);
 
-        $message = 'ชื่อ-นามสกุล:'.$request['name'].", เพศ:".$request['sex'].", อายุ".$request['age'].", เบอรืโทร:".$request['phone'] .", อายุ:".$request['phone'].", line ID: ".$request['line']." , อาชีพ: ".$request['career'].", หัวข้อที่อยากปรึกษา : ".$admins.", อื่นๆ:".$request['comments'];
+        $message = 'ชื่อ-นามสกุล:'.$request['name'].", เพศ:".$request['sex'].", อายุ".$request['age'].", เบอรืโทร:".$request['phone'] .", อายุ:".$request['phone'].", line ID: ".$request['line']." , อาชีพ: ".$request['career'].", หัวข้อที่อยากปรึกษา : ".$admins.", อื่นๆ:".$request['comments'].", เวลานัดหมาย: ".$request['days']." เวลา: ".$request['timer'];
         $lineapi = setting()->line_token;
 
         $mms =  trim($message);
@@ -134,6 +134,7 @@ class HomeController extends Controller
        $package->career = $request['career'];
        $package->subject = $admins;
        $package->subject2 = $request['comments'];
+       $package->paid = $request['days'].", เวลา :".$request['timer'];
        $package->save();
 
         return response()->json([

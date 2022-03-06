@@ -48,7 +48,7 @@ h5{
 
       
     <h3>นัดปรึกษาครั้งแรก</h3>
-    <p><b>ในการพูดคุยครั้งแรก (ผ่านโปรแกรม zoom ไม่เกิน 1 ชั่วโมง) นักวางแผนการเงินจะเก็บข้อมูลและให้คำปรึษาในเบื้องต้น รวมถึงให้รายละเอียดการให้บริการ  กรุณากรอกข้อมูลเพื่อที่เราจะติดต่อกลับไปเพื่อทำการนัดหมาย</b></p>
+    <p><b>ในการพูดคุยครั้งแรก (ผ่านโปรแกรม zoom ไม่เกิน 1 ชั่วโมง) นักวางแผนการเงินจะเก็บข้อมูลและให้คำปรึกษาในเบื้องต้น รวมถึงให้รายละเอียดการให้บริการ  กรุณากรอกข้อมูลเพื่อที่เราจะติดต่อกลับไปเพื่อทำการนัดหมาย</b></p>
 
     
 <form id="contactForm">
@@ -102,9 +102,11 @@ h5{
 
 
 <div class="row">
-<div class="col-md-12">
-<p><b>หัวข้อที่อยากปรึกษา </b></p>
+    <div class="col-md-12">
+    <p><b>หัวข้อที่อยากปรึกษา </b></p>
     <div class="checkboxes in-row margin-bottom-20">
+
+        
 
         <input id="check-a" type="checkbox" name="subject[]" value="วางแผนการเงินภาพรวม">
         <label for="check-a">วางแผนการเงินภาพรวม</label>
@@ -121,6 +123,12 @@ h5{
         <input id="check-e" type="checkbox" name="subject[]" value="วางแผนเรื่องหนี้สิน">
         <label for="check-e">วางแผนเรื่องหนี้สิน</label>
 
+        <input id="check-f" type="checkbox" name="subject[]" value="วางแผนส่งต่อธุรกิจ/ธรรมนูญครอบครับ">
+        <label for="check-f">วางแผนส่งต่อธุรกิจ/ธรรมนูญครอบครับ</label>
+
+        <input id="check-g" type="checkbox" name="subject[]" value="วางแผนพินัยกรรม/มรดก">
+        <label for="check-g">วางแผนพินัยกรรม/มรดก</label>
+
         
 
     </div>
@@ -129,15 +137,36 @@ h5{
     <div class="col-md-12">
     <textarea name="comments" cols="40" rows="3" id="comments" placeholder="อื่นๆระบุ....." spellcheck="true" required="required"></textarea>
 
-  
-    <h4>ช่วงเวลาที่สะดวกให้นัดหมาย. (ให้เลือกจ- ส. และ ระบุช่วงเวลาให้เลือก)</h4>
-    <br>
+    
+    
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+    <p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
+
+            <select class="chosen-select-no-single" id="days" name="days">
+                <option label="blank" value="">เลือกช่วงเวลาที่สะดวกให้นัดหมาย</option>	
+                <option value="จันทร์">จันทร์</option>
+                <option value="อังคาร">อังคาร</option>
+                <option value="พุธ">พุธ</option>
+                <option value="พฤหัสบดี">พฤหัสบดี</option>
+                <option value="ศุกร์">ศุกร์</option>
+                <option value="เสาร์">เสาร์</option>
+            </select>
     </div>
 
-
-
-
+    <div class="col-md-6">
+    <p><b> &nbsp</b></p>
+        <input name="timer" type="text" id="timer" placeholder="เวลา 10.00"  required="required" />
+    </div>
+    <br>
 </div>
+
+
+
 
 <div>
     <div class="g-recaptcha" data-sitekey="6LdBOl8UAAAAALrNu0pKZ5qiNc42G2FYKh8Jmynb"></div>

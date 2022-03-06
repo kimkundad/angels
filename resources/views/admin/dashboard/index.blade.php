@@ -120,7 +120,7 @@
                             </td>
                             
 							              <td>
-                              {{$u->created_at}}
+                              {{$u->paid}}
                             </td>
                            
                           </tr>

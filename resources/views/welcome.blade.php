@@ -248,7 +248,7 @@ padding-right:15px;
 	}
 </style>
 
-<div class="main-search-container" data-background-image="{{ url('img/1000-pix-QP1C7434.jpg') }}">
+<div class="main-search-container" data-background-image="{{ url('img/Calculating-a-Revenue.jpg') }}">
 	<div class="main-search-inner">
 
 		<div class="container">
