@@ -144,11 +144,13 @@ h5{
 
 
 <div class="row">
-    <div class="col-md-6">
-    <p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
 
+<div class="col-md-6"><p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
+</div>
+    <div class="col-md-6">
+    
             <select class="chosen-select-no-single" id="days" name="days">
-                <option label="blank" value="">เลือกช่วงเวลาที่สะดวกให้นัดหมาย</option>	
+                <option value="">เลือกช่วงเวลาที่สะดวกให้นัดหมาย</option>	
                 <option value="จันทร์">จันทร์</option>
                 <option value="อังคาร">อังคาร</option>
                 <option value="พุธ">พุธ</option>
@@ -159,7 +161,6 @@ h5{
     </div>
 
     <div class="col-md-6">
-    <p><b> &nbsp</b></p>
         <input name="timer" type="text" id="timer" placeholder="เวลา 10.00"  required="required" />
     </div>
     <br>
