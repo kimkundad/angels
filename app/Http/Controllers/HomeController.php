@@ -98,10 +98,10 @@ class HomeController extends Controller
       
         } */
 
-        $admins=implode(",",$subject);
-        
+        $admins=implode("/",$subject);
 
-        $message = 'ชื่อ-นามสกุล:'.$request['name'].", เพศ:".$request['sex'].", อายุ".$request['age'].", เบอร์โทร:".$request['phone'] .", line ID: ".$request['line']." , อาชีพ: ".$request['career'].", หัวข้อที่อยากปรึกษา : ".$admins.", อื่นๆ:".$request['comments'].", เวลานัดหมาย: ".$request['days']." เวลา: ".$request['timer'];
+
+        $message = 'ชื่อ-นามสกุล:'.$request['name'].", เพศ:".$request['sex'].", อายุ:".$request['age'].", เบอร์โทร:".$request['phone'] .", line ID: ".$request['line']." , อาชีพ: ".$request['career'].", หัวข้อที่อยากปรึกษา : ".$admins.", อื่นๆ:".$request['comments'].", เวลานัดหมาย: ".$request['days']." เวลา: ".$request['timer'];
         $lineapi = setting()->line_token;
 
         $mms =  trim($message);

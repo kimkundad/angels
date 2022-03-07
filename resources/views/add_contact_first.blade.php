@@ -63,7 +63,7 @@ h5{
     <div class="col-md-6">
         <div>
             <select class="chosen-select-no-single" id="sex" name="sex">
-                <option value="">เลือกเพศ</option>	
+                <option value="">เพศ</option>	
                 <option value="ชาย">ชาย</option>
                 <option value="หญิง">หญิง</option>
                 <option value="ไม่ระบุ">ไม่ระบุ</option>
@@ -145,12 +145,12 @@ h5{
 
 <div class="row">
 
-<div class="col-md-12"><p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
+<div class="col-md-12"><p><b>ช่วงวัน-เวลาที่สะดวกให้นัดหมาย </b></p>
 </div>
     <div class="col-md-6">
     
             <select class="chosen-select-no-single" id="days" name="days">
-                <option value="">เลือกช่วงเวลาที่สะดวกให้นัดหมาย</option>	
+                <option value="">เลือกวันที่สะดวกให้นัดหมาย</option>	
                 <option value="จันทร์">จันทร์</option>
                 <option value="อังคาร">อังคาร</option>
                 <option value="พุธ">พุธ</option>
@@ -283,7 +283,7 @@ if(name == '' || sex == '' || age == '' || phone == ''){
                 $.LoadingOverlay("hide");
             }, 0);
 
-            swal("สำเร็จ!", "ข้อความถูกส่งไปหาเจ้าหน้าที่เรียบร้อยแล้ว", "success");
+            swal("ขอบคุณสำหรับข้อมูล!", "ทางทีมจะรีบติดต่อกลับไป เพื่อทำการนัดหมายเวลานะคะ", "success");
 
             
           setTimeout(function(){
