@@ -63,7 +63,7 @@ h5{
     <div class="col-md-6">
         <div>
             <select class="chosen-select-no-single" id="sex" name="sex">
-                <option label="blank" value="">เลือกเพศ</option>	
+                <option value="">เลือกเพศ</option>	
                 <option value="ชาย">ชาย</option>
                 <option value="หญิง">หญิง</option>
                 <option value="ไม่ระบุ">ไม่ระบุ</option>
@@ -124,7 +124,7 @@ h5{
         <label for="check-e">วางแผนเรื่องหนี้สิน</label>
 
         <input id="check-f" type="checkbox" name="subject[]" value="วางแผนส่งต่อธุรกิจ/ธรรมนูญครอบครับ">
-        <label for="check-f">วางแผนส่งต่อธุรกิจ/ธรรมนูญครอบครับ</label>
+        <label for="check-f">วางแผนส่งต่อธุรกิจ/ธรรมนูญครอบครัว</label>
 
         <input id="check-g" type="checkbox" name="subject[]" value="วางแผนพินัยกรรม/มรดก">
         <label for="check-g">วางแผนพินัยกรรม/มรดก</label>
