@@ -145,7 +145,7 @@ h5{
 
 <div class="row">
 
-<div class="col-md-6"><p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
+<div class="col-md-12"><p><b>ช่วงเวลาที่สะดวกให้นัดหมาย </b></p>
 </div>
     <div class="col-md-6">
     
