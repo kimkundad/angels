@@ -123,7 +123,7 @@ padding-right:15px;
     height: 100%;
     width: 100%;
     display: block;
-    background: linear-gradient(to right, rgb(255 255 255 / 0%) 20%, rgb(255 255 255 / 0%) 70%, rgba(255,255,255,0) 95%);
+    background: linear-gradient(to right, rgb(0 0 0 / 30%) 20%, rgb(0 0 0 / 20%) 70%, rgba(255,255,255,0) 95%);
 }
 </style>
 
@@ -248,7 +248,7 @@ padding-right:15px;
 	}
 </style>
 
-<div class="main-search-container" data-background-image="{{ url('img/Calculating-a-Revenue.jpg') }}">
+<div class="main-search-container" data-background-image="{{ url('img/internal-business-process-perspective.png') }}">
 	<div class="main-search-inner">
 
 		<div class="container">

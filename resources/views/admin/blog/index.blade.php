@@ -17,6 +17,8 @@ window.gaTitle = 'หน้าแรก';
                   <a href="{{ url('admin/blog/create') }}" class="btn btn-success btn-fw" style="float:right"><i class="icon-plus"></i>เพิ่มบทความ</a>
                   <br /><br />
                 </div>
+
+                
                 <div class="col-md-12 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
