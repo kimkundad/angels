@@ -263,7 +263,7 @@ padding-right:15px;
     width: auto;
     border: 1px solid #ffffff;
     border-radius: 50px;
-    padding: 9px 20px;
+    padding: 9px 10px;
     position: relative;">สนใจนัดปรึกษาเบื้องต้น (ไม่มีค่าใช้จ่าย) </h4>
 
 					<a href="{{ url('add_contact_first') }}" class="button preview" style="    font-size: 26px;">คลิก </a>
