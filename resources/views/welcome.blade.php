@@ -264,7 +264,7 @@ padding-right:15px;
     border: 1px solid #ffffff;
     border-radius: 50px;
     padding: 9px 10px;
-    position: relative;">สนใจนัดปรึกษาเบื้องต้น (ไม่มีค่าใช้จ่าย) </h4>
+    position: relative;">สนใจนัดปรึกษาครั้งแรก (ไม่มีค่าใช้จ่าย) </h4>
 
 					<a href="{{ url('add_contact_first') }}" class="button preview" style="    font-size: 26px;">คลิก </a>
 					<h4>การวางแผนการเงิน ยิ่งเริ่มเร็วยิ่งดี ไม่เริ่มวันนี้ อาจจะสายเกิน</h4>
